@@ -1,3 +1,6 @@
+#ifndef _PERSONA_
+#define _PERSONA_
+
 #include <string>
 
 class Persona
@@ -28,3 +31,5 @@ class Persona
         std::string ObtenerRol(){return rol_;}
         std::string ObtenerFacultad(){return facultad_;}
 };
+
+#endif
