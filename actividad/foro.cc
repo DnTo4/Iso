@@ -1,8 +1,16 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "foro.h"
+#include <fstream>
 #include "actividad.h"
+
+Actividad::Actividad(std::string titulo, std::string nombre_creador, std::string descripcion, int num_usuarios)
+{
+    titulo_=titulo;
+    nombre_creador_=nombre_creador;
+    descripcion_=descripcion;
+    num_usuarios_=num_usuarios;
+};
 
 void Foro::DeleteListaActividades(){
     list_actividades_.clear();
@@ -108,4 +116,41 @@ std::vector<std::string> Foro::GetTitulos() {
     }
 
     return vecaux;
-}
+};
+
+bool Foro::FileDatosActividades(){
+    std::ofstream fichero("Lista_Actividades.txt", std::ios::app);
+        if(fichero.is_open()){
+            for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
+                fichero << it->GetTitulo() << "|" << it->GetCreador() <<"|" << it->GetDescripcion() <<"|" << it->GetNumUsers()<<'\n';
+            }
+            fichero.close();
+            std::cout<< "Los datos se han guardado correctamente ..."<<std::endl;
+            return true;
+        }
+        else{
+            std::cout<< "Ha habido un error abriendo el archivo..."<<std::endl;
+            return false;
+        }
+};
+
+Actividad Foro::GetActividad(std::string titulo) {
+    for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
+        if (titulo == it->GetTitulo()) {
+            Actividad aux(it->GetTitulo(),it->GetCreador());  // Crear un objeto Actividad auxiliar
+            // Copiar los atributos de la actividad encontrada a la actividad auxiliar
+            aux.SetDescripcion(it->GetDescripcion());
+            aux.SetNumUsers(it->GetNumUsers());
+            // Puedes detener el bucle una vez que encuentras la actividad deseada
+            return aux;
+        }
+    }
+    std::cout<<"No se a encontrado la actividad especidicada"<<std::endl;
+    exit(EXIT_FAILURE);
+};
+
+std::string LongString(std::string descripcion)
+{
+    std::getline(std::cin, descripcion);
+    return descripcion;
+};

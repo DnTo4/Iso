@@ -3,6 +3,11 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <fstream>
+#include <list>
+
+std::string LongString(std::string descripcion);
 
 class Actividad {
     private:
@@ -20,6 +25,7 @@ class Actividad {
         void SetTitulo(std::string titulo){titulo_=titulo;};
         void SetCreador(std::string nombre_creador){nombre_creador_=nombre_creador;};
         void SetDescripcion(std::string descripcion){descripcion_=descripcion;};
+
         bool SetNumUsers(int num_usuarios)
         {
             if(num_usuarios<0){
@@ -37,13 +43,33 @@ class Actividad {
         int GetNumUsers(){return num_usuarios_;};
 
         void GetInfo(){
-            std::cout<<"La información de esta Actividad: "<<std::endl;
-            std::cout<<GetTitulo()<<std::endl;
-            std::cout<<GetCreador()<<std::endl;
-            std::cout<<GetDescripcion()<<std::endl;
-            std::cout<<GetNumUsers()<<std::endl;
+        std::cout << "La información de esta Actividad: " << std::endl;
+        std::cout << "Título: " << GetTitulo() << std::endl;
+        std::cout << "Creador: " << GetCreador() << std::endl;
+        std::cout << "Descripción: " << GetDescripcion() << std::endl;
+        std::cout << "Número de Usuarios: " << GetNumUsers() << std::endl;
         };
 
 };
+class Foro{
+        
+    private:        
+        //Crear una lista
+        std::list<Actividad> list_actividades_;
+        //Numero de Actividades
+        int num_actividades_;
 
+    public:
+        Foro(){num_actividades_=0;};
+        bool DeleteActividad(std::string id_title);
+        bool DeleteActividad(Actividad activ){return DeleteActividad(activ.GetTitulo());};
+        void DeleteListaActividades();
+        int GetNumActiv(){return num_actividades_;}
+        bool AddActividad(Actividad activ);
+        bool ModActividad(Actividad activ);
+        Actividad GetActividad(std::string titulo);
+        std::vector<std::string> GetTitulos();
+        bool FileDatosActividades();
+
+};
 #endif
