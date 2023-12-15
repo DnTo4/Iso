@@ -1,6 +1,7 @@
 #include "persona.h"
 #include <iostream>
 
+/*Constructor clase Pesona*/
 Persona::Persona(std::string dni, std::string email,std::string contrasenia, std::string nombre, std::string rol, std::string facultad)
 {
     dni_ = dni;
@@ -11,6 +12,7 @@ Persona::Persona(std::string dni, std::string email,std::string contrasenia, std
     facultad_ = facultad;
 }
 
+/*Imprime por pantalla todos los datos de una persona*/
 void Persona::MostrarPersona()
 {
     std::cout << "DNI: " << dni_ << "\n"; 
@@ -18,5 +20,5 @@ void Persona::MostrarPersona()
     std::cout << "Correo: " << email_ << "\n"; 
     std::cout << "Facultad: " << facultad_ << "\n"; 
     std::cout << "Rol: " << rol_ << "\n";
-
 }
+
