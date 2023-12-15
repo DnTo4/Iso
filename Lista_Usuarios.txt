@@ -1,1 +1,3 @@
-i22moria|2004|Usuario|emptyempty|empty|
+i22moria|2004|Administrador|emptyempty|empty|
+i22poria|2003|Usuario|emptyempty|empty|
+i22doria|2005|Director|emptyempty|empty|

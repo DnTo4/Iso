@@ -1,10 +1,12 @@
 #include <iostream>
+#include <typeinfo>
 #include "files/actividad.h"
 #include "files/admin.h"
 
 int main()
 {
 Systema sys;
+Persona user("empty", "empty", "Usuario");
 int attempts=3;
 bool cont=true;
 
@@ -13,7 +15,6 @@ sys.LeerDatosUsuarios();
 do{
     std::string nom_usuario, inputContrasenia;
     std::string respuesta; 
-    Persona user(nom_usuario, inputContrasenia, "Usuario");
 
     
 
@@ -21,6 +22,7 @@ do{
     std::cout<<"\n--Iniciar sesion--"<<std::endl;
     std::cout<<"Introduzca su usuario:"<<std::endl;
     std::cin>>nom_usuario;
+    user.CambiaNombre(nom_usuario);
 
     if(sys.ExisteUsuario(nom_usuario)==false)
     {
@@ -56,6 +58,24 @@ do{
     cont = false;
 }while(cont!=false);
 
-
+    if(user.ObtenerRol()=="Usuario")
+    {
+        Usuario user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
+         user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
+        user1.UserMenu();
+        
+    }  
+    if(user.ObtenerRol()=="Director")
+    {
+        Director user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
+         user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
+        user1.DirectorMenu();
+    }
+    else
+    {
+        Admin user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
+         user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
+        user1.AdminMenu();
+    }
 
 };

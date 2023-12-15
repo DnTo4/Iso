@@ -48,22 +48,31 @@ class Usuario: public Persona //--->And
         std::list<Actividad> listaPreinscrito_;
         std::list<Actividad> listaInscrito_;
     public:
-        Usuario();
+        Usuario(std::string email, std::string contrasenia,
+         std::string rol, std::string dni="empty",
+         std::string nombre="empty", std::string facultad="empty");
         bool Preinscribe(Actividad act);
         bool Inscribe(Actividad act);
+        void UserMenu();
 };
 class Director: public Persona //--->And
 {
     private:
     public:
-        Director();
+        Director(std::string email, std::string contrasenia,
+         std::string rol, std::string dni="empty",
+         std::string nombre="empty", std::string facultad="empty");
+        void DirectorMenu();
 };
 
 class Admin: public Persona //--->And
 {
     private:
     public:
-        Admin();
+        Admin(std::string email, std::string contrasenia,
+         std::string rol, std::string dni="empty",
+         std::string nombre="empty", std::string facultad="empty");
+        void AdminMenu();
 };
 
 class Systema//--->And
