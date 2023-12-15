@@ -11,7 +11,7 @@ Persona::Persona(std::string dni, std::string email,std::string contrasenia, std
     facultad_ = facultad;
 }
 
-void MostrarPersona()
+void Persona::MostrarPersona()
 {
     std::cout << "DNI: " << dni_ << "\n"; 
     std::cout << "Nombre completo: " << nombrecompleto_ << "\n"; 
