@@ -1,6 +1,6 @@
 #include <iostream>
 #include <typeinfo>
-#include "files/actividad.h"
+//#include "files/actividad.h"
 #include "files/admin.h"
 
 int main()
@@ -22,7 +22,7 @@ do{
     std::cout<<"\n--Iniciar sesion--"<<std::endl;
     std::cout<<"Introduzca su usuario:"<<std::endl;
     std::cin>>nom_usuario;
-    user.CambiaNombre(nom_usuario);
+    user.CambiaEmail(nom_usuario);
 
     if(sys.ExisteUsuario(nom_usuario)==false)
     {
@@ -34,6 +34,7 @@ do{
             std::cin >> inputContrasenia;
             user.CambiaContrasenia(inputContrasenia);
             sys.AddUsuario(user);
+            sys.borrarArchivo("Lista_Usuarios.txt");
             sys.FileDatosUsuarios();
         }
         else{exit(EXIT_FAILURE);}
@@ -54,6 +55,7 @@ do{
     }
     attempts=0;
     }while(attempts!=0);
+    user = sys.GetUser(nom_usuario);
     std::cout<<"Usuario Logeado Bienvenido..."<<std::endl;
     cont = false;
 }while(cont!=false);
@@ -62,20 +64,21 @@ do{
     {
         Usuario user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
          user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
-        user1.UserMenu();
+        user1.UserMenu(user1);
         
     }  
     if(user.ObtenerRol()=="Director")
     {
         Director user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
          user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
-        user1.DirectorMenu();
+        user1.DirectorMenu(user1);
     }
-    else
+    if(user.ObtenerRol()=="Administrador")
     {
         Admin user1(user.ObtenerEmail(), user.ObtenerContrasenia(), user.ObtenerRol(),
          user.ObtenerDni(), user.ObtenerNombre(), user.ObtenerFacultad());
-        user1.AdminMenu();
+        user1.AdminMenu(user1);
     }
+    else{return 0;}
 
 };

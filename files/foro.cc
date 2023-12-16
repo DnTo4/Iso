@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
-#include "actividad.h"
+#include "admin.h"
 
 Actividad::Actividad(std::string titulo, std::string nombre_creador, std::string descripcion, int num_usuarios)
 {
@@ -123,17 +123,17 @@ bool Foro::LeerDatosActividades(){
     std::string nombreArchivo = "Lista_Actividades.txt";
     std::ifstream archivo(nombreArchivo);
     if (!archivo.is_open()) {
-        std::ofstream archivo_escritura(nombreArchivo);
-        // Verificar si la apertura para lectura fue exitosa después de intentar crear el archivo
-        if (!archivo_escritura.is_open()) {
-            std::cerr << "Error al abrir o crear el archivo: " << nombreArchivo << std::endl;
-            archivo_escritura.close();
-            return false;
-        }
-        else{
-            archivo_escritura.close();
-            return true;
-        }
+        // std::ofstream archivo_escritura(nombreArchivo);
+        // // Verificar si la apertura para lectura fue exitosa después de intentar crear el archivo
+        // if (!archivo_escritura.is_open()) {
+        //     std::cerr << "Error al abrir o crear el archivo: " << nombreArchivo << std::endl;
+        //     archivo_escritura.close();
+        //     return false;
+        // }
+        // else{
+        //     archivo_escritura.close();
+        //     return true;
+        // }
     }
     
     std::string linea;
@@ -171,7 +171,7 @@ bool Foro::FileDatosActividades(){
     std::ofstream fichero("Lista_Actividades.txt", std::ios::app);
         if(fichero.is_open()){
             for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
-                fichero << it->GetTitulo() << "|" << it->GetCreador() <<"|" << it->GetDescripcion() <<"|" << it->GetNumUsers()<<'\n';
+                fichero << it->GetTitulo() << "|" << it->GetCreador() <<"|" << it->GetDescripcion() <<"|" << it->GetNumUsers()<<"|"<<'\n';
             }
             fichero.close();
             std::cout<< "Los datos se han guardado correctamente ..."<<std::endl;
@@ -182,7 +182,15 @@ bool Foro::FileDatosActividades(){
             return false;
         }
 };
-
+bool Foro::borrarArchivo(const std::string& nombreArchivo) {
+    if (std::remove(nombreArchivo.c_str()) == 0) {
+        std::cout << "Archivo '" << nombreArchivo << "' borrado correctamente.\n";
+        return true;
+    } else {
+        std::cerr << "Error al intentar borrar el archivo '" << nombreArchivo << "'.\n";
+        return false;
+    }
+};
 Actividad Foro::GetActividad(std::string titulo) {
     for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
         if (titulo == it->GetTitulo()) {
@@ -209,7 +217,7 @@ bool Foro::ExisteActividad(std::string title){
     }
     return false;
 };
-void Foro::Control_actividad(){
+void Foro::Control_actividad(Persona pers){
     
     Foro miForo;
 
@@ -251,9 +259,8 @@ void Foro::Control_actividad(){
                     break;
                 }
                 nuevaActividad.SetTitulo(newTitle);
-                std::cout << "Ingrese el nombre del creador de la actividad:\n";
-                std::cin >> newCreator;
-                nuevaActividad.SetCreador(newCreator);
+
+                nuevaActividad.SetCreador(pers.ObtenerEmail());
                 std::cout << "Para introducir una descripción entre en el menu de modificación de la actividad";
                 std::cout<<'\n';
                 
@@ -278,9 +285,9 @@ void Foro::Control_actividad(){
             case 4:
                 // Mostrar Títulos de Actividades utilizando la lista list_actividades_
                 std::cout << "\nTítulos de Actividades:\n";
-                if(list_actividades_.empty()){
-                    std::cout<<"(La lista de actividades esta vacia)"<<std::endl;
-                }
+                // if(list_actividades_.empty()){
+                //     std::cout<<"(La lista de actividades esta vacia)"<<std::endl;
+                // }
                 for (auto it=list_actividades_.begin(); it!=list_actividades_.end();it++) {
                     std::cout << "- " << it->GetTitulo() << '\n';
                 }
@@ -288,6 +295,7 @@ void Foro::Control_actividad(){
                 break;
             case 5:
                 // Guardar Datos en Archivo
+                miForo.borrarArchivo("Lista_Actividades.txt");
                 miForo.FileDatosActividades();
                 std::cout<<"\n________________________________________________________\n";
                 break;
@@ -304,6 +312,7 @@ void Foro::Control_actividad(){
                 break;
             case 0:
                 std::cout << "\nSaliendo del programa...\n";
+                miForo.borrarArchivo("Lista_Actividades.txt"); 
                 miForo.FileDatosActividades();
                 std::cout<<"\n________________________________________________________\n";
                 break;

@@ -54,6 +54,17 @@ bool Systema::DeleteUsuario(std::string correo)
     return false;    
 };
 
+
+bool Systema::borrarArchivo(const std::string& nombreArchivo) {
+    if (std::remove(nombreArchivo.c_str()) == 0) {
+        std::cout << "Archivo '" << nombreArchivo << "' borrado correctamente.\n";
+        return true;
+    } else {
+        std::cerr << "Error al intentar borrar el archivo '" << nombreArchivo << "'.\n";
+        return false;
+    }
+};
+
 bool Systema::EditUsuario(Persona usuario)
 {
     int opcion;
@@ -160,11 +171,11 @@ bool Systema::LeerDatosUsuarios()
 
 bool Systema::FileDatosUsuarios()
 {
-    std::ofstream fichero("Lista_Usuarios.txt", std::ios::app);
+    std::ofstream fichero("Lista_Usuarios.txt");
         if(fichero.is_open()){
             for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
                 fichero << it->ObtenerEmail() << "|" << it->ObtenerContrasenia() <<"|" 
-                << it->ObtenerRol() <<"|" << it->ObtenerDni()<< it->ObtenerNombre() <<"|"
+                << it->ObtenerRol() <<"|" << it->ObtenerDni()<<"|"<< it->ObtenerNombre() <<"|"
                 << it->ObtenerFacultad() <<"|" << '\n';
             }
             fichero.close();
@@ -198,6 +209,7 @@ Persona Systema::GetUser(std::string correo)
             return aux;
         }
     }
+    exit(EXIT_FAILURE);
 };
 
 void Systema::ProgramaSystemAdmin()
@@ -317,6 +329,7 @@ void Systema::ProgramaSystemAdmin()
             }
             case 0: {
                 std::cout << "Saliendo del programa...\n";
+                FileDatosUsuarios();
                 break;
             }
             default: {
@@ -327,13 +340,6 @@ void Systema::ProgramaSystemAdmin()
     } while (opcion != 0);   
 };
 
-void Systema::ProgramUsuario(Persona usuario)
-{
-    std::string new_pass;
-    std::cout << "Ingrese la contraseña del nuevo usuario:\n";
-    std::cin>>new_pass;
-    usuario.CambiaContrasenia(new_pass);
-};
 
 bool Systema::ComprobarContraseña(std::string correo, std::string password)
 {

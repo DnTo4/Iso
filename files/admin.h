@@ -6,7 +6,7 @@
 #include <vector>
 #include <fstream>
 #include <list>
-#include "actividad.h"
+//#include "actividad.h"
 
 
 class Persona
@@ -42,6 +42,74 @@ class Persona
 
 };
 
+class Actividad {
+    private:
+        std::string nombre_creador_;
+        std::string titulo_;
+        std::string descripcion_;
+        int num_usuarios_;
+
+
+    public:
+        Actividad(std::string titulo, std::string nombre_creador, 
+            std::string descripcion = "empty", int num_usuarios = 0);
+
+        void SetTitulo(std::string titulo){titulo_=titulo;};
+        void SetCreador(std::string nombre_creador){nombre_creador_=nombre_creador;};
+        void SetDescripcion(std::string descripcion){descripcion_=descripcion;};
+
+        bool SetNumUsers(int num_usuarios)
+        {
+            if(num_usuarios<0){
+                std::cout<<"Es imposible tener un numero de subscriptores negativo"<<std::endl;
+                return false;
+            }
+            num_usuarios_=num_usuarios;
+            return true;   
+        };
+
+
+        std::string GetTitulo(){return titulo_;};
+        std::string GetCreador(){return nombre_creador_;};
+        std::string GetDescripcion(){return descripcion_;};
+        int GetNumUsers(){return num_usuarios_;};
+        int AddUserToActiv(){return (num_usuarios_++);};
+
+        void GetInfo(){
+        std::cout << "La información de esta Actividad: " << std::endl;
+        std::cout << "Título: " << GetTitulo() << std::endl;
+        std::cout << "Creador: " << GetCreador() << std::endl;
+        std::cout << "Descripción: " << GetDescripcion() << std::endl;
+        std::cout << "Número de Usuarios: " << GetNumUsers() << std::endl;
+        };
+
+};
+class Foro{
+        
+    private:        
+        //Crear una lista
+        std::list<Actividad> list_actividades_;
+        //Numero de Actividades
+        int num_actividades_;
+
+    public:
+        Foro(){num_actividades_=0;};
+        bool DeleteActividad(std::string id_title);
+        bool DeleteActividad(Actividad activ){return DeleteActividad(activ.GetTitulo());};
+        void DeleteListaActividades();
+        int GetNumActiv(){return num_actividades_;}
+        bool AddActividad(Actividad activ);
+        bool ModActividad(Actividad activ);
+        Actividad GetActividad(std::string titulo);
+        std::vector<std::string> GetTitulos();
+        bool FileDatosActividades();
+        bool LeerDatosActividades();
+        void Control_actividad(Persona pers);
+        bool ExisteActividad(std::string title);
+        bool borrarArchivo(const std::string& nombreArchivo);
+
+};
+
 class Usuario: public Persona //--->And
 {
     private:
@@ -50,10 +118,12 @@ class Usuario: public Persona //--->And
     public:
         Usuario(std::string email, std::string contrasenia,
          std::string rol, std::string dni="empty",
-         std::string nombre="empty", std::string facultad="empty");
+         std::string nombre="empty",
+         std::string facultad="empty"):Persona(email, contrasenia,
+         rol, dni,nombre, facultad){};
         bool Preinscribe(Actividad act);
         bool Inscribe(Actividad act);
-        void UserMenu();
+        void UserMenu(Usuario user);
 };
 class Director: public Persona //--->And
 {
@@ -61,8 +131,10 @@ class Director: public Persona //--->And
     public:
         Director(std::string email, std::string contrasenia,
          std::string rol, std::string dni="empty",
-         std::string nombre="empty", std::string facultad="empty");
-        void DirectorMenu();
+         std::string nombre="empty",
+         std::string facultad="empty"):Persona(email, contrasenia,
+         rol, dni,nombre, facultad){};
+        void DirectorMenu(Director user);
 };
 
 class Admin: public Persona //--->And
@@ -71,8 +143,10 @@ class Admin: public Persona //--->And
     public:
         Admin(std::string email, std::string contrasenia,
          std::string rol, std::string dni="empty",
-         std::string nombre="empty", std::string facultad="empty");
-        void AdminMenu();
+         std::string nombre="empty",
+         std::string facultad="empty"):Persona(email, contrasenia,
+         rol, dni,nombre, facultad){};
+        void AdminMenu(Admin user);
 };
 
 class Systema//--->And
@@ -96,7 +170,7 @@ class Systema//--->And
         bool ComprobarContraseña (std::string correo, std::string password);
         Persona GetUser(std::string correo);
         void ProgramaSystemAdmin();
-        void ProgramUsuario(Persona usuario);
+        bool borrarArchivo(const std::string& nombreArchivo);
 };
 
 #endif
