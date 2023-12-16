@@ -1,3 +1,5 @@
-i22moria|2004|Administrador|emptyempty|empty|
+andres22|2004|Administrador|emptyempty|empty|
+daniel22|2004|Administrador|emptyempty|empty|
+rafa22|2004|Administrador|emptyempty|empty|
 i22poria|2003|Usuario|emptyempty|empty|
 i22doria|2005|Director|emptyempty|empty|
