@@ -219,6 +219,7 @@ void Systema::ProgramaSystemAdmin()
     int opcion, rol, fac;
     std::string new_email, new_pass, new_name;
     do {
+        std::cout<<"\n________________________________________________________";
         std::cout << "Menú:\n";
         std::cout << "1. Agregar Usuario\n";
         std::cout << "2. Eliminar Usuario\n";
@@ -236,6 +237,7 @@ void Systema::ProgramaSystemAdmin()
                 if(sistema.ExisteUsuario(new_email))
                 {
                     std::cout<<"Ese usuario ya existe"<<std::endl;
+                    std::cout<<"\n________________________________________________________";
                     break;
                 }
                 nueva_person.CambiaEmail(new_email);
@@ -289,7 +291,9 @@ void Systema::ProgramaSystemAdmin()
                         fac=0;
 
                 }while (fac != 0);
-                AddUsuario(nueva_person);
+                std::cout<<"\n________________________________________________________";
+                sistema.DeleteUsuario(new_email);
+                sistema.AddUsuario(nueva_person);
                 break;
             }
             case 2: {

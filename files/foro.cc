@@ -128,7 +128,7 @@ bool Foro::LeerDatosActividades(){
         // if (!archivo_escritura.is_open()) {
         //     std::cerr << "Error al abrir o crear el archivo: " << nombreArchivo << std::endl;
         //     archivo_escritura.close();
-        //     return false;
+        return false;
         // }
         // else{
         //     archivo_escritura.close();
@@ -280,6 +280,7 @@ void Foro::Control_actividad(Persona pers){
                 std::cout << "\nIngrese el título de la actividad a eliminar: ";
                 std::cin >> id_title;
                 miForo.DeleteActividad(id_title);
+                std::cout <<"Actividad eliminada correctamente\n";
                 std::cout<<"\n________________________________________________________\n";
                 break;
             case 4:
