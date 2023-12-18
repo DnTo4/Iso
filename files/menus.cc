@@ -28,8 +28,12 @@ void Usuario::UserMenu(Usuario user)
         switch(on)
         {
             case 1:
+                std::cout<<"\n________________________________________________________\n";
+                std::cout<<"Las Actividades disponibles actualmente son:\n";
+                std::cout<<"________________________________________________________\n";
                 foroCopy.GetTitulos();
-                break;
+                std::cout<<"\n________________________________________________________\n";
+                break;;
             case 2:
                 //foro añadir usuario a actividad
                 std::cout << "Ingrese el titulo de la actividad:\n";
@@ -137,7 +141,11 @@ void Director::DirectorMenu(Director user)
                 foroCopy.Control_actividad(user);
                 break;
             case 2:
+                std::cout<<"\n________________________________________________________\n";
+                std::cout<<"Las Actividades disponibles actualmente son:\n";
+                std::cout<<"________________________________________________________\n";
                 foroCopy.GetTitulos();
+                std::cout<<"\n________________________________________________________\n";
                 break;
             case 3:
                 std::cout << "Menú:\n";

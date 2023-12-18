@@ -105,18 +105,19 @@ bool Foro::ModActividad(Actividad activ){
     return true;
 };
 
-std::vector<std::string> Foro::GetTitulos() {
+void Foro::GetTitulos() {
     std::vector<std::string> vecaux;
 
     if (list_actividades_.empty()) {
-        return vecaux;
+        std::cout << "No hay actividades";
     } else {
         for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
-            vecaux.push_back(it->GetTitulo());
+           std::cout <<" -"<<it->GetTitulo() << "|" << it->GetCreador() 
+           <<"|" << it->GetDescripcion() <<"|" << it->GetNumUsers()
+           <<"|"<<'\n';
         }
     }
 
-    return vecaux;
 };
 
 bool Foro::LeerDatosActividades(){

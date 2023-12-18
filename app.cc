@@ -55,7 +55,7 @@ do{
     }while(attempts!=0);
     user = sys.GetUser(nom_usuario);
     std::cout<<"Usuario Logeado Bienvenido..."<<std::endl;
-    std::cout<<"\n________________________________________________________";
+    std::cout<<"\n________________________________________________________\n";
     cont = false;
 }while(cont!=false);
 

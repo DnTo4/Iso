@@ -101,7 +101,7 @@ class Foro{
         bool AddActividad(Actividad activ);
         bool ModActividad(Actividad activ);
         Actividad GetActividad(std::string titulo);
-        std::vector<std::string> GetTitulos();
+        void GetTitulos();
         bool FileDatosActividades();
         bool LeerDatosActividades();
         void Control_actividad(Persona pers);
