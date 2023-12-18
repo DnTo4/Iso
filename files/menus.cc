@@ -15,13 +15,17 @@ void Usuario::UserMenu(Usuario user)
 {
     foroCopy.LeerDatosActividades();
     infCopy.LeerDatosUsuarios();
+    Actividad aux(user.ObtenerEmail(),user.ObtenerContrasenia(),user.ObtenerRol());
     int option;
+    std::string file_name = user.ObtenerNombre()+".txt";
+    user.LeerDataUser(file_name);
     do
     {
         std::cout << "Menú:\n";
         std::cout << "1.Visualizar actividades disponibles.\n";
         std::cout << "2.Apuntarse a una actividad\n";
         std::cout << "3.Editar perfil\n";
+        std::cout << "4.Actividades a las que estoy preinscrito\n";
         std::cout << "0.Salir\n";
         std::cin >> on;
 
@@ -33,14 +37,16 @@ void Usuario::UserMenu(Usuario user)
                 std::cout<<"________________________________________________________\n";
                 foroCopy.GetTitulos();
                 std::cout<<"\n________________________________________________________\n";
-                break;;
+                break;
             case 2:
                 //foro añadir usuario a actividad
                 std::cout << "Ingrese el titulo de la actividad:\n";
                 std::cin >> search;
-                foroCopy.GetActividad(search).AddUserToActiv();
+                aux = foroCopy.GetActividad(search);
+                foroCopy.AddUserToActiv(aux);
+
                 //Usuario apuntarse ac
-                listaInscrito_.push_back(foroCopy.GetActividad(search));
+                user.Preinscribe(aux);
                 break;
             case 3:
                 std::cout << "Menú:\n";
@@ -80,8 +86,16 @@ void Usuario::UserMenu(Usuario user)
                         break;
                 }
                 break;
+            case 4:
+                std::cout<<"\n________________________________________________________\n";
+                std::cout<<"Las Actividades a las que actualmente estas apuntado son:\n";
+                std::cout<<"________________________________________________________\n";
+                user.VerPreInscripcion();
+                std::cout<<"\n________________________________________________________\n";
+                break;
             case 0:
                 std::cout << "Saliendo...\n";
+                user.FileDataUser(file_name);
                 break;  // Agregado para evitar el error
             default:
                 std::cout << "Opción no válida. Intente de nuevo.\n";

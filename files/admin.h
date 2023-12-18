@@ -73,7 +73,6 @@ class Actividad {
         std::string GetCreador(){return nombre_creador_;};
         std::string GetDescripcion(){return descripcion_;};
         int GetNumUsers(){return num_usuarios_;};
-        int AddUserToActiv(){return (num_usuarios_++);};
 
         void GetInfo(){
         std::cout << "La información de esta Actividad: " << std::endl;
@@ -107,6 +106,7 @@ class Foro{
         void Control_actividad(Persona pers);
         bool ExisteActividad(std::string title);
         bool borrarArchivo(const std::string& nombreArchivo);
+        void AddUserToActiv(Actividad ac);
 
 };
 
@@ -124,6 +124,9 @@ class Usuario: public Persona //--->And
         bool Preinscribe(Actividad act);
         bool Inscribe(Actividad act);
         void UserMenu(Usuario user);
+        void VerPreInscripcion();
+        bool FileDataUser(std::string name);
+        bool LeerDataUser(std::string name);
 };
 class Director: public Persona //--->And
 {

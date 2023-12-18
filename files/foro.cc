@@ -13,6 +13,21 @@ Actividad::Actividad(std::string titulo, std::string nombre_creador, std::string
     num_usuarios_=num_usuarios;
 };
 
+void Foro::AddUserToActiv(Actividad ac)
+{
+    // Get the current number of users
+    DeleteActividad(ac);
+    int num_users = ac.GetNumUsers();
+
+    // Increment the number of users
+    ac.SetNumUsers(num_users + 1);
+    AddActividad(ac);
+    // Assuming these functions are responsible for handling file operations
+    borrarArchivo("Lista_Actividades.txt");
+    FileDatosActividades();
+};
+
+
 void Foro::DeleteListaActividades(){
     list_actividades_.clear();
     num_actividades_=0;
@@ -40,7 +55,6 @@ bool Foro::AddActividad(Actividad activ){
     }
     list_actividades_.push_back(activ);
     num_actividades_++;
-    std::cout<<"Actividad añadida correctamente."<<std::endl;
     return true;
 
 };
@@ -106,7 +120,6 @@ bool Foro::ModActividad(Actividad activ){
 };
 
 void Foro::GetTitulos() {
-    std::vector<std::string> vecaux;
 
     if (list_actividades_.empty()) {
         std::cout << "No hay actividades";
@@ -164,7 +177,6 @@ bool Foro::LeerDatosActividades(){
     }
     archivo.close();
     
-    std::cout << "Sincronizando datos..." << std::endl;
     return true;
 };
 
@@ -175,7 +187,6 @@ bool Foro::FileDatosActividades(){
                 fichero << it->GetTitulo() << "|" << it->GetCreador() <<"|" << it->GetDescripcion() <<"|" << it->GetNumUsers()<<"|"<<'\n';
             }
             fichero.close();
-            std::cout<< "Los datos se han guardado correctamente ..."<<std::endl;
             return true;
         }
         else{
@@ -183,6 +194,7 @@ bool Foro::FileDatosActividades(){
             return false;
         }
 };
+
 bool Foro::borrarArchivo(const std::string& nombreArchivo) {
     if (std::remove(nombreArchivo.c_str()) == 0) {
         std::cout << "Archivo '" << nombreArchivo << "' borrado correctamente.\n";
@@ -192,6 +204,7 @@ bool Foro::borrarArchivo(const std::string& nombreArchivo) {
         return false;
     }
 };
+
 Actividad Foro::GetActividad(std::string titulo) {
     for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
         if (titulo == it->GetTitulo()) {
@@ -287,13 +300,7 @@ void Foro::Control_actividad(Persona pers){
             case 4:
                 // Mostrar Títulos de Actividades utilizando la lista list_actividades_
                 std::cout << "\nTítulos de Actividades:\n";
-                // if(list_actividades_.empty()){
-                //     std::cout<<"(La lista de actividades esta vacia)"<<std::endl;
-                // }
-                for (auto it=list_actividades_.begin(); it!=list_actividades_.end();it++) {
-                    std::cout << "- " << it->GetTitulo() << '\n';
-                }
-                std::cout << "\n________________________________________________________\n";
+                miForo.GetTitulos();
                 break;
             case 5:
                 // Guardar Datos en Archivo
