@@ -40,20 +40,18 @@ do{
         else{exit(EXIT_FAILURE);}
     }
     do{
-    std::cout << "\nIngrese su contraseña para iniciar sesión: ";
-    std::cin >> inputContrasenia;
+        std::cout << "\nIngrese su contraseña para iniciar sesión: ";
+        std::cin >> inputContrasenia;
 
-    if(sys.ComprobarContraseña(nom_usuario,inputContrasenia)==false)
-    {
-        std::cout<<"Te quedan "<< attempts << " intententos." <<std::endl;
-        attempts--;
-        if(attempts==0){
-            std::cout<<"Intentos escedidos"<<std::endl;
-            exit(EXIT_FAILURE);
-        };
-        break;
-    }
-    attempts=0;
+        if(sys.ComprobarContraseña(nom_usuario,inputContrasenia)==true){break;}
+        else{
+            attempts--;
+            std::cout<<"Te quedan "<< attempts << " intententos." <<std::endl;
+            if(attempts==0){
+                std::cout<<"Intentos escedidos"<<std::endl;
+                exit(EXIT_FAILURE);
+            }
+        }
     }while(attempts!=0);
     user = sys.GetUser(nom_usuario);
     std::cout<<"Usuario Logeado Bienvenido..."<<std::endl;
