@@ -9,7 +9,7 @@
 //#include "actividad.h"
 
 
-class Persona
+class Persona // .H Y .CC
 {
     private:
 
@@ -42,7 +42,7 @@ class Persona
 
 };
 
-class Actividad {
+class Actividad { // .H Y .CC
     private:
         std::string nombre_creador_;
         std::string titulo_;
@@ -83,7 +83,7 @@ class Actividad {
         };
 
 };
-class Foro{
+class Foro{ // .H Y .CC
         
     private:        
         //Crear una lista
@@ -110,7 +110,7 @@ class Foro{
 
 };
 
-class Usuario: public Persona //--->And
+class Usuario: public Persona //--->And .H
 {
     private:
         std::list<Actividad> listaPreinscrito_;
@@ -140,7 +140,7 @@ class Director: public Persona //--->And
         void DirectorMenu(Director user);
 };
 
-class Admin: public Persona //--->And
+class Admin: public Persona //--->And .H
 {
     private:
     public:
@@ -152,7 +152,7 @@ class Admin: public Persona //--->And
         void AdminMenu(Admin user);
 };
 
-class Systema//--->And
+class Systema//--->And .H
 {
     private:
 
