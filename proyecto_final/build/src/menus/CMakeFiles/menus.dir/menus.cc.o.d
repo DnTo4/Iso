@@ -1,5 +1,5 @@
 src/menus/CMakeFiles/menus.dir/menus.cc.o: \
- /home/rafa/Escritorio/proyecto_final/src/menus/menus.cc \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/menus/menus.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,14 +146,14 @@ src/menus/CMakeFiles/menus.dir/menus.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/rafa/Escritorio/proyecto_final/src/systema/systema.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/systema/systema.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/rafa/Escritorio/proyecto_final/src/persona/persona.h \
- /home/rafa/Escritorio/proyecto_final/src/usuario/usuario.h \
- /home/rafa/Escritorio/proyecto_final/src/actividades/actividades.h \
- /home/rafa/Escritorio/proyecto_final/src/foro/foro.h \
- /home/rafa/Escritorio/proyecto_final/src/admin/admin.h \
- /home/rafa/Escritorio/proyecto_final/src/director-actividad/director-actividad.h
+ /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/usuario/usuario.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/actividades/actividades.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/foro/foro.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/admin/admin.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/director-actividad/director-actividad.h

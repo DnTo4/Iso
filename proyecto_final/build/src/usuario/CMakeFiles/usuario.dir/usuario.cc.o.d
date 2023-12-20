@@ -1,7 +1,7 @@
 src/usuario/CMakeFiles/usuario.dir/usuario.cc.o: \
- /home/rafa/Escritorio/proyecto_final/src/usuario/usuario.cc \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/usuario/usuario.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/proyecto_final/src/usuario/usuario.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/usuario/usuario.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -134,8 +134,8 @@ src/usuario/CMakeFiles/usuario.dir/usuario.cc.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/rafa/Escritorio/proyecto_final/src/persona/persona.h \
- /home/rafa/Escritorio/proyecto_final/src/actividades/actividades.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/actividades/actividades.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

@@ -1,7 +1,7 @@
 src/systema/CMakeFiles/systema.dir/systema.cc.o: \
- /home/rafa/Escritorio/proyecto_final/src/systema/systema.cc \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/systema/systema.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/proyecto_final/src/systema/systema.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/systema/systema.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -134,7 +134,7 @@ src/systema/CMakeFiles/systema.dir/systema.cc.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/rafa/Escritorio/proyecto_final/src/persona/persona.h \
+ /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
