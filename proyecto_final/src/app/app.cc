@@ -5,7 +5,7 @@
 #include "systema.h"
 #include "actividades.h"
 #include "admin.h"
-#include "director-actividad.h"
+#include "director.h"
 #include "foro.h"
 #include "persona.h"
 #include "usuario.h"

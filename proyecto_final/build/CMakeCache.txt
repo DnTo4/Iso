@@ -310,10 +310,10 @@ INSTALL_GTEST:BOOL=ON
 admin_LIB_DEPENDS:STATIC=general;persona;
 
 //Dependencies for the target
-app_LIB_DEPENDS:STATIC=general;actividades;general;systema;general;admin;general;director-actividad;general;foro;general;persona;general;usuario;general;menus;
+app_LIB_DEPENDS:STATIC=general;actividades;general;systema;general;admin;general;director;general;foro;general;persona;general;usuario;general;menus;
 
 //Dependencies for the target
-director-actividad_LIB_DEPENDS:STATIC=general;persona;
+director_LIB_DEPENDS:STATIC=general;persona;
 
 //Dependencies for the target
 foro_LIB_DEPENDS:STATIC=general;actividades;general;persona;

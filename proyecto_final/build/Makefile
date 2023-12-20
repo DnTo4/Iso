@@ -211,17 +211,17 @@ admin/fast:
 .PHONY : admin/fast
 
 #=============================================================================
-# Target rules for targets named director-actividad
+# Target rules for targets named director
 
 # Build rule for target.
-director-actividad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 director-actividad
-.PHONY : director-actividad
+director: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 director
+.PHONY : director
 
 # fast build rule for target.
-director-actividad/fast:
-	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/build
-.PHONY : director-actividad/fast
+director/fast:
+	$(MAKE) $(MAKESILENT) -f src/director/CMakeFiles/director.dir/build.make src/director/CMakeFiles/director.dir/build
+.PHONY : director/fast
 
 #=============================================================================
 # Target rules for targets named foro
@@ -424,7 +424,7 @@ help:
 	@echo "... admin"
 	@echo "... app"
 	@echo "... app-main"
-	@echo "... director-actividad"
+	@echo "... director"
 	@echo "... foro"
 	@echo "... foro-test"
 	@echo "... gmock"

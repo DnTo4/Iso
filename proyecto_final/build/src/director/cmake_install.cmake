@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src
+# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/director
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,19 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/admin/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/director/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/foro/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/menus/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/systema/cmake_install.cmake")
-  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/app/cmake_install.cmake")
-
 endif()
 

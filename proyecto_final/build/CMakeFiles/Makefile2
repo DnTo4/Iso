@@ -134,7 +134,7 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 # Recursive "all" directory target.
 src/all: src/actividades/all
 src/all: src/admin/all
-src/all: src/director-actividad/all
+src/all: src/director/all
 src/all: src/foro/all
 src/all: src/persona/all
 src/all: src/usuario/all
@@ -146,7 +146,7 @@ src/all: src/app/all
 # Recursive "preinstall" directory target.
 src/preinstall: src/actividades/preinstall
 src/preinstall: src/admin/preinstall
-src/preinstall: src/director-actividad/preinstall
+src/preinstall: src/director/preinstall
 src/preinstall: src/foro/preinstall
 src/preinstall: src/persona/preinstall
 src/preinstall: src/usuario/preinstall
@@ -158,7 +158,7 @@ src/preinstall: src/app/preinstall
 # Recursive "clean" directory target.
 src/clean: src/actividades/clean
 src/clean: src/admin/clean
-src/clean: src/director-actividad/clean
+src/clean: src/director/clean
 src/clean: src/foro/clean
 src/clean: src/persona/clean
 src/clean: src/usuario/clean
@@ -217,19 +217,19 @@ src/app/clean: src/app/CMakeFiles/app-main.dir/clean
 .PHONY : src/app/clean
 
 #=============================================================================
-# Directory level rules for directory src/director-actividad
+# Directory level rules for directory src/director
 
 # Recursive "all" directory target.
-src/director-actividad/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
-.PHONY : src/director-actividad/all
+src/director/all: src/director/CMakeFiles/director.dir/all
+.PHONY : src/director/all
 
 # Recursive "preinstall" directory target.
-src/director-actividad/preinstall:
-.PHONY : src/director-actividad/preinstall
+src/director/preinstall:
+.PHONY : src/director/preinstall
 
 # Recursive "clean" directory target.
-src/director-actividad/clean: src/director-actividad/CMakeFiles/director-actividad.dir/clean
-.PHONY : src/director-actividad/clean
+src/director/clean: src/director/CMakeFiles/director.dir/clean
+.PHONY : src/director/clean
 
 #=============================================================================
 # Directory level rules for directory src/foro
@@ -406,30 +406,30 @@ src/admin/CMakeFiles/admin.dir/clean:
 .PHONY : src/admin/CMakeFiles/admin.dir/clean
 
 #=============================================================================
-# Target rules for target src/director-actividad/CMakeFiles/director-actividad.dir
+# Target rules for target src/director/CMakeFiles/director.dir
 
 # All Build rule for target.
-src/director-actividad/CMakeFiles/director-actividad.dir/all: src/persona/CMakeFiles/persona.dir/all
-	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=12 "Built target director-actividad"
-.PHONY : src/director-actividad/CMakeFiles/director-actividad.dir/all
+src/director/CMakeFiles/director.dir/all: src/persona/CMakeFiles/persona.dir/all
+	$(MAKE) $(MAKESILENT) -f src/director/CMakeFiles/director.dir/build.make src/director/CMakeFiles/director.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/director/CMakeFiles/director.dir/build.make src/director/CMakeFiles/director.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=12 "Built target director"
+.PHONY : src/director/CMakeFiles/director.dir/all
 
 # Build rule for subdir invocation for target.
-src/director-actividad/CMakeFiles/director-actividad.dir/rule: cmake_check_build_system
+src/director/CMakeFiles/director.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/director-actividad/CMakeFiles/director-actividad.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/director/CMakeFiles/director.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
-.PHONY : src/director-actividad/CMakeFiles/director-actividad.dir/rule
+.PHONY : src/director/CMakeFiles/director.dir/rule
 
 # Convenience name for target.
-director-actividad: src/director-actividad/CMakeFiles/director-actividad.dir/rule
-.PHONY : director-actividad
+director: src/director/CMakeFiles/director.dir/rule
+.PHONY : director
 
 # clean rule for target.
-src/director-actividad/CMakeFiles/director-actividad.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/clean
-.PHONY : src/director-actividad/CMakeFiles/director-actividad.dir/clean
+src/director/CMakeFiles/director.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/director/CMakeFiles/director.dir/build.make src/director/CMakeFiles/director.dir/clean
+.PHONY : src/director/CMakeFiles/director.dir/clean
 
 #=============================================================================
 # Target rules for target src/foro/CMakeFiles/foro.dir
@@ -517,7 +517,6 @@ src/usuario/CMakeFiles/usuario.dir/clean:
 # All Build rule for target.
 src/menus/CMakeFiles/menus.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 src/menus/CMakeFiles/menus.dir/all: src/admin/CMakeFiles/admin.dir/all
-src/menus/CMakeFiles/menus.dir/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
 src/menus/CMakeFiles/menus.dir/all: src/foro/CMakeFiles/foro.dir/all
 src/menus/CMakeFiles/menus.dir/all: src/persona/CMakeFiles/persona.dir/all
 src/menus/CMakeFiles/menus.dir/all: src/usuario/CMakeFiles/usuario.dir/all
@@ -529,7 +528,7 @@ src/menus/CMakeFiles/menus.dir/all: src/systema/CMakeFiles/systema.dir/all
 
 # Build rule for subdir invocation for target.
 src/menus/CMakeFiles/menus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : src/menus/CMakeFiles/menus.dir/rule
@@ -575,7 +574,7 @@ src/systema/CMakeFiles/systema.dir/clean:
 # All Build rule for target.
 src/app/CMakeFiles/app.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 src/app/CMakeFiles/app.dir/all: src/admin/CMakeFiles/admin.dir/all
-src/app/CMakeFiles/app.dir/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
+src/app/CMakeFiles/app.dir/all: src/director/CMakeFiles/director.dir/all
 src/app/CMakeFiles/app.dir/all: src/foro/CMakeFiles/foro.dir/all
 src/app/CMakeFiles/app.dir/all: src/persona/CMakeFiles/persona.dir/all
 src/app/CMakeFiles/app.dir/all: src/usuario/CMakeFiles/usuario.dir/all
@@ -608,7 +607,7 @@ src/app/CMakeFiles/app.dir/clean:
 # All Build rule for target.
 src/app/CMakeFiles/app-main.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 src/app/CMakeFiles/app-main.dir/all: src/admin/CMakeFiles/admin.dir/all
-src/app/CMakeFiles/app-main.dir/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/director/CMakeFiles/director.dir/all
 src/app/CMakeFiles/app-main.dir/all: src/foro/CMakeFiles/foro.dir/all
 src/app/CMakeFiles/app-main.dir/all: src/persona/CMakeFiles/persona.dir/all
 src/app/CMakeFiles/app-main.dir/all: src/usuario/CMakeFiles/usuario.dir/all
@@ -642,6 +641,7 @@ src/app/CMakeFiles/app-main.dir/clean:
 # All Build rule for target.
 tests/CMakeFiles/systema-test.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 tests/CMakeFiles/systema-test.dir/all: src/admin/CMakeFiles/admin.dir/all
+tests/CMakeFiles/systema-test.dir/all: src/director/CMakeFiles/director.dir/all
 tests/CMakeFiles/systema-test.dir/all: src/foro/CMakeFiles/foro.dir/all
 tests/CMakeFiles/systema-test.dir/all: src/persona/CMakeFiles/persona.dir/all
 tests/CMakeFiles/systema-test.dir/all: src/usuario/CMakeFiles/usuario.dir/all
@@ -657,7 +657,7 @@ tests/CMakeFiles/systema-test.dir/all: _deps/googletest-build/googletest/CMakeFi
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/systema-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/systema-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/systema-test.dir/rule

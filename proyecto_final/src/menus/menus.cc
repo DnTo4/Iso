@@ -6,7 +6,7 @@
 #include "foro.h"
 #include "actividades.h"
 #include "admin.h"
-#include "director-actividad.h"
+#include "director.h"
 
 int on = 0;
 

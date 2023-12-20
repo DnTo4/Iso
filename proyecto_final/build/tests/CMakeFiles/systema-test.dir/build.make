@@ -98,6 +98,7 @@ tests/systema-test: src/actividades/libactividades.a
 tests/systema-test: src/persona/libpersona.a
 tests/systema-test: src/usuario/libusuario.a
 tests/systema-test: src/admin/libadmin.a
+tests/systema-test: src/director/libdirector.a
 tests/systema-test: lib/libgtest_main.a
 tests/systema-test: lib/libgmock_main.a
 tests/systema-test: lib/libgmock.a

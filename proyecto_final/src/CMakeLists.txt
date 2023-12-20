@@ -1,6 +1,6 @@
 add_subdirectory(actividades)
 add_subdirectory(admin)
-add_subdirectory(director-actividad)
+add_subdirectory(director)
 add_subdirectory(foro)
 add_subdirectory(persona)
 add_subdirectory(usuario)

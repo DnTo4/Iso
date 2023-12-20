@@ -16,7 +16,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades/CMakeFiles/actividades.dir/DependInfo.cmake"
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/systema/CMakeFiles/systema.dir/DependInfo.cmake"
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/admin/CMakeFiles/admin.dir/DependInfo.cmake"
-  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/director-actividad/CMakeFiles/director-actividad.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/director/CMakeFiles/director.dir/DependInfo.cmake"
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/foro/CMakeFiles/foro.dir/DependInfo.cmake"
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario/CMakeFiles/usuario.dir/DependInfo.cmake"

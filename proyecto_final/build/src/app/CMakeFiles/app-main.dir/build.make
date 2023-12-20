@@ -93,10 +93,10 @@ app__main_EXTERNAL_OBJECTS =
 src/app/app-main: src/app/CMakeFiles/app-main.dir/app.cc.o
 src/app/app-main: src/app/CMakeFiles/app-main.dir/build.make
 src/app/app-main: src/app/libapp.a
+src/app/app-main: src/director/libdirector.a
 src/app/app-main: src/menus/libmenus.a
 src/app/app-main: src/systema/libsystema.a
 src/app/app-main: src/admin/libadmin.a
-src/app/app-main: src/director-actividad/libdirector-actividad.a
 src/app/app-main: src/foro/libforo.a
 src/app/app-main: src/usuario/libusuario.a
 src/app/app-main: src/actividades/libactividades.a
