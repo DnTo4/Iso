@@ -315,19 +315,6 @@ app-main/fast:
 .PHONY : app-main/fast
 
 #=============================================================================
-# Target rules for targets named persona-test
-
-# Build rule for target.
-persona-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 persona-test
-.PHONY : persona-test
-
-# fast build rule for target.
-persona-test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
-.PHONY : persona-test/fast
-
-#=============================================================================
 # Target rules for targets named systema-test
 
 # Build rule for target.
@@ -341,17 +328,17 @@ systema-test/fast:
 .PHONY : systema-test/fast
 
 #=============================================================================
-# Target rules for targets named actividad-test
+# Target rules for targets named actividades-test
 
 # Build rule for target.
-actividad-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actividad-test
-.PHONY : actividad-test
+actividades-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actividades-test
+.PHONY : actividades-test
 
 # fast build rule for target.
-actividad-test/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/build
-.PHONY : actividad-test/fast
+actividades-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/build
+.PHONY : actividades-test/fast
 
 #=============================================================================
 # Target rules for targets named foro-test
@@ -431,9 +418,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... actividad-test"
 	@echo "... actividades"
 	@echo "... actividades-main"
+	@echo "... actividades-test"
 	@echo "... admin"
 	@echo "... app"
 	@echo "... app-main"
@@ -446,7 +433,6 @@ help:
 	@echo "... gtest_main"
 	@echo "... menus"
 	@echo "... persona"
-	@echo "... persona-test"
 	@echo "... systema"
 	@echo "... systema-test"
 	@echo "... usuario"

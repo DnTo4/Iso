@@ -163,7 +163,7 @@ bool Systema::ExisteUsuario(std::string correo)
     return false;
 }
 
-bool Systema::ComprobarContraseña(std::string correo, std::string password)
+bool Systema::ComprobarContrasena(std::string correo, std::string password)
 {
     for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
         if (correo == it->ObtenerEmail()&&password == it->ObtenerContrasenia()) {

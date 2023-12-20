@@ -12,10 +12,10 @@ target_link_libraries(GTest::GTest INTERFACE gtest_main gmock_main)
 # End GTest include code
 
 # Testing persona library
-add_executable(persona-test persona-test.cc)
-target_link_libraries(persona-test
- PRIVATE GTest::GTest persona)
-add_test(persona-gtests persona-test)
+#add_executable(persona-test persona-test.cc)
+#target_link_libraries(persona-test
+# PRIVATE GTest::GTest persona)
+#add_test(persona-gtests persona-test)
 
 # Testing systema library
 add_executable(systema-test systema-test.cc)

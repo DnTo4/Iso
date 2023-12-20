@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "actividades/actividades.h"  // Asegúrate de incluir el archivo de la clase Actividad
+#include <actividades.h>  // Asegúrate de incluir el archivo de la clase Actividad
 
 // Prueba para el constructor y los métodos de acceso
 TEST(ActividadTest, ConstructorYAcceso) {

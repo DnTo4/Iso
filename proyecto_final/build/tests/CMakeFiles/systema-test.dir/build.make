@@ -94,6 +94,7 @@ tests/systema-test: tests/CMakeFiles/systema-test.dir/systema-test.cc.o
 tests/systema-test: tests/CMakeFiles/systema-test.dir/build.make
 tests/systema-test: src/systema/libsystema.a
 tests/systema-test: src/foro/libforo.a
+tests/systema-test: src/actividades/libactividades.a
 tests/systema-test: src/persona/libpersona.a
 tests/systema-test: src/usuario/libusuario.a
 tests/systema-test: src/admin/libadmin.a

@@ -86,9 +86,8 @@
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/app/CMakeFiles/install.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/app/CMakeFiles/install/local.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/app/CMakeFiles/install/strip.dir
-/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/persona-test.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/systema-test.dir
-/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/actividad-test.dir
+/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/actividades-test.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/foro-test.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/test.dir
 /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/CMakeFiles/edit_cache.dir

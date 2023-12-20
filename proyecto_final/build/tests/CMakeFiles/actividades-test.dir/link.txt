@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/actividades-test.dir/actividades-test.cc.o -o actividades-test  ../src/actividades/libactividades.a ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a 

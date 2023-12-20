@@ -310,9 +310,8 @@ src/usuario/clean: src/usuario/CMakeFiles/usuario.dir/clean
 # Directory level rules for directory tests
 
 # Recursive "all" directory target.
-tests/all: tests/CMakeFiles/persona-test.dir/all
 tests/all: tests/CMakeFiles/systema-test.dir/all
-tests/all: tests/CMakeFiles/actividad-test.dir/all
+tests/all: tests/CMakeFiles/actividades-test.dir/all
 tests/all: tests/CMakeFiles/foro-test.dir/all
 tests/all: _deps/googletest-build/all
 .PHONY : tests/all
@@ -322,9 +321,8 @@ tests/preinstall: _deps/googletest-build/preinstall
 .PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-tests/clean: tests/CMakeFiles/persona-test.dir/clean
 tests/clean: tests/CMakeFiles/systema-test.dir/clean
-tests/clean: tests/CMakeFiles/actividad-test.dir/clean
+tests/clean: tests/CMakeFiles/actividades-test.dir/clean
 tests/clean: tests/CMakeFiles/foro-test.dir/clean
 tests/clean: _deps/googletest-build/clean
 .PHONY : tests/clean
@@ -336,7 +334,7 @@ tests/clean: _deps/googletest-build/clean
 src/actividades/CMakeFiles/actividades.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=3,4 "Built target actividades"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=1,2 "Built target actividades"
 .PHONY : src/actividades/CMakeFiles/actividades.dir/all
 
 # Build rule for subdir invocation for target.
@@ -362,7 +360,7 @@ src/actividades/CMakeFiles/actividades.dir/clean:
 src/actividades/CMakeFiles/actividades-main.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=5,6 "Built target actividades-main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=3,4 "Built target actividades-main"
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -494,7 +492,7 @@ src/usuario/CMakeFiles/usuario.dir/all: src/actividades/CMakeFiles/actividades.d
 src/usuario/CMakeFiles/usuario.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=35,36 "Built target usuario"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=33,34 "Built target usuario"
 .PHONY : src/usuario/CMakeFiles/usuario.dir/all
 
 # Build rule for subdir invocation for target.
@@ -552,7 +550,7 @@ src/menus/CMakeFiles/menus.dir/clean:
 src/systema/CMakeFiles/systema.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/systema/CMakeFiles/systema.dir/build.make src/systema/CMakeFiles/systema.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/systema/CMakeFiles/systema.dir/build.make src/systema/CMakeFiles/systema.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=31,32 "Built target systema"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=29,30 "Built target systema"
 .PHONY : src/systema/CMakeFiles/systema.dir/all
 
 # Build rule for subdir invocation for target.
@@ -639,36 +637,6 @@ src/app/CMakeFiles/app-main.dir/clean:
 .PHONY : src/app/CMakeFiles/app-main.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/persona-test.dir
-
-# All Build rule for target.
-tests/CMakeFiles/persona-test.dir/all: src/persona/CMakeFiles/persona.dir/all
-tests/CMakeFiles/persona-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-tests/CMakeFiles/persona-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-tests/CMakeFiles/persona-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-tests/CMakeFiles/persona-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=29,30 "Built target persona-test"
-.PHONY : tests/CMakeFiles/persona-test.dir/all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/persona-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 12
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/persona-test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/persona-test.dir/rule
-
-# Convenience name for target.
-persona-test: tests/CMakeFiles/persona-test.dir/rule
-.PHONY : persona-test
-
-# clean rule for target.
-tests/CMakeFiles/persona-test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/clean
-.PHONY : tests/CMakeFiles/persona-test.dir/clean
-
-#=============================================================================
 # Target rules for target tests/CMakeFiles/systema-test.dir
 
 # All Build rule for target.
@@ -684,7 +652,7 @@ tests/CMakeFiles/systema-test.dir/all: _deps/googletest-build/googletest/CMakeFi
 tests/CMakeFiles/systema-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=33,34 "Built target systema-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=31,32 "Built target systema-test"
 .PHONY : tests/CMakeFiles/systema-test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -704,33 +672,34 @@ tests/CMakeFiles/systema-test.dir/clean:
 .PHONY : tests/CMakeFiles/systema-test.dir/clean
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/actividad-test.dir
+# Target rules for target tests/CMakeFiles/actividades-test.dir
 
 # All Build rule for target.
-tests/CMakeFiles/actividad-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-tests/CMakeFiles/actividad-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-tests/CMakeFiles/actividad-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-tests/CMakeFiles/actividad-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/depend
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=1,2 "Built target actividad-test"
-.PHONY : tests/CMakeFiles/actividad-test.dir/all
+tests/CMakeFiles/actividades-test.dir/all: src/actividades/CMakeFiles/actividades.dir/all
+tests/CMakeFiles/actividades-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+tests/CMakeFiles/actividades-test.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+tests/CMakeFiles/actividades-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+tests/CMakeFiles/actividades-test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=5,6 "Built target actividades-test"
+.PHONY : tests/CMakeFiles/actividades-test.dir/all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/actividad-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividad-test.dir/all
+tests/CMakeFiles/actividades-test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividades-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
-.PHONY : tests/CMakeFiles/actividad-test.dir/rule
+.PHONY : tests/CMakeFiles/actividades-test.dir/rule
 
 # Convenience name for target.
-actividad-test: tests/CMakeFiles/actividad-test.dir/rule
-.PHONY : actividad-test
+actividades-test: tests/CMakeFiles/actividades-test.dir/rule
+.PHONY : actividades-test
 
 # clean rule for target.
-tests/CMakeFiles/actividad-test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/clean
-.PHONY : tests/CMakeFiles/actividad-test.dir/clean
+tests/CMakeFiles/actividades-test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/clean
+.PHONY : tests/CMakeFiles/actividades-test.dir/clean
 
 #=============================================================================
 # Target rules for target tests/CMakeFiles/foro-test.dir

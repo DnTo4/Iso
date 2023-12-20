@@ -172,20 +172,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/persona-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/persona-test.dir/rule
-.PHONY : tests/CMakeFiles/persona-test.dir/rule
-
-# Convenience name for target.
-persona-test: tests/CMakeFiles/persona-test.dir/rule
-.PHONY : persona-test
-
-# fast build rule for target.
-persona-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
-.PHONY : persona-test/fast
-
-# Convenience name for target.
 tests/CMakeFiles/systema-test.dir/rule:
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/systema-test.dir/rule
 .PHONY : tests/CMakeFiles/systema-test.dir/rule
@@ -200,18 +186,18 @@ systema-test/fast:
 .PHONY : systema-test/fast
 
 # Convenience name for target.
-tests/CMakeFiles/actividad-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividad-test.dir/rule
-.PHONY : tests/CMakeFiles/actividad-test.dir/rule
+tests/CMakeFiles/actividades-test.dir/rule:
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividades-test.dir/rule
+.PHONY : tests/CMakeFiles/actividades-test.dir/rule
 
 # Convenience name for target.
-actividad-test: tests/CMakeFiles/actividad-test.dir/rule
-.PHONY : actividad-test
+actividades-test: tests/CMakeFiles/actividades-test.dir/rule
+.PHONY : actividades-test
 
 # fast build rule for target.
-actividad-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/build
-.PHONY : actividad-test/fast
+actividades-test/fast:
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/build
+.PHONY : actividades-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/foro-test.dir/rule:
@@ -227,29 +213,29 @@ foro-test/fast:
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/build
 .PHONY : foro-test/fast
 
-actividad-test.o: actividad-test.cc.o
-.PHONY : actividad-test.o
+actividades-test.o: actividades-test.cc.o
+.PHONY : actividades-test.o
 
 # target to build an object file
-actividad-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/actividad-test.cc.o
-.PHONY : actividad-test.cc.o
+actividades-test.cc.o:
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.o
+.PHONY : actividades-test.cc.o
 
-actividad-test.i: actividad-test.cc.i
-.PHONY : actividad-test.i
+actividades-test.i: actividades-test.cc.i
+.PHONY : actividades-test.i
 
 # target to preprocess a source file
-actividad-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/actividad-test.cc.i
-.PHONY : actividad-test.cc.i
+actividades-test.cc.i:
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.i
+.PHONY : actividades-test.cc.i
 
-actividad-test.s: actividad-test.cc.s
-.PHONY : actividad-test.s
+actividades-test.s: actividades-test.cc.s
+.PHONY : actividades-test.s
 
 # target to generate assembly for a file
-actividad-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/actividad-test.cc.s
-.PHONY : actividad-test.cc.s
+actividades-test.cc.s:
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.s
+.PHONY : actividades-test.cc.s
 
 foro-test.o: foro-test.cc.o
 .PHONY : foro-test.o
@@ -274,30 +260,6 @@ foro-test.s: foro-test.cc.s
 foro-test.cc.s:
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.s
 .PHONY : foro-test.cc.s
-
-persona-test.o: persona-test.cc.o
-.PHONY : persona-test.o
-
-# target to build an object file
-persona-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.o
-.PHONY : persona-test.cc.o
-
-persona-test.i: persona-test.cc.i
-.PHONY : persona-test.i
-
-# target to preprocess a source file
-persona-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.i
-.PHONY : persona-test.cc.i
-
-persona-test.s: persona-test.cc.s
-.PHONY : persona-test.s
-
-# target to generate assembly for a file
-persona-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.s
-.PHONY : persona-test.cc.s
 
 systema-test.o: systema-test.cc.o
 .PHONY : systema-test.o
@@ -336,19 +298,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... actividad-test"
+	@echo "... actividades-test"
 	@echo "... foro-test"
-	@echo "... persona-test"
 	@echo "... systema-test"
-	@echo "... actividad-test.o"
-	@echo "... actividad-test.i"
-	@echo "... actividad-test.s"
+	@echo "... actividades-test.o"
+	@echo "... actividades-test.i"
+	@echo "... actividades-test.s"
 	@echo "... foro-test.o"
 	@echo "... foro-test.i"
 	@echo "... foro-test.s"
-	@echo "... persona-test.o"
-	@echo "... persona-test.i"
-	@echo "... persona-test.s"
 	@echo "... systema-test.o"
 	@echo "... systema-test.i"
 	@echo "... systema-test.s"

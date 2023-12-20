@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "foro/foro.h"
+#include <foro.h>
 
 TEST(ForoTest, AddActividad) {
     Foro foro;

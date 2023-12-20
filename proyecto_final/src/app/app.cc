@@ -50,7 +50,7 @@ do{
         std::cout << "\nIngrese su contraseña para iniciar sesión: ";
         std::cin >> inputContrasenia;
 
-        if(sys.ComprobarContraseña(nom_usuario,inputContrasenia)==true){break;}
+        if(sys.ComprobarContrasena(nom_usuario,inputContrasenia)==true){break;}
         else{
             attempts--;
             std::cout<<"Te quedan "<< attempts << " intententos." <<std::endl;

@@ -23,7 +23,7 @@ class Systema//--->And
         bool FileDatosUsuarios();
         bool LeerDatosUsuarios();
         bool ExisteUsuario(std::string correo);
-        bool ComprobarContraseña (std::string correo, std::string password);
+        bool ComprobarContrasena (std::string correo, std::string password);
         Persona GetUser(std::string correo);
         void ProgramaSystemAdmin();
         bool borrarArchivo(const std::string& nombreArchivo);
