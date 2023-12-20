@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
+=======
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +104,24 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades//CMakeFiles/progress.marks
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades//CMakeFiles/progress.marks
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/clean
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/clean
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +130,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/preinstall
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/preinstall
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/preinstall
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/preinstall
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : depend
 
 # Convenience name for target.
 src/actividades/CMakeFiles/actividades.dir/rule:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades.dir/rule
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades.dir/rule
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades.dir/rule
 
 # Convenience name for target.
@@ -137,12 +170,20 @@ actividades: src/actividades/CMakeFiles/actividades.dir/rule
 
 # fast build rule for target.
 actividades/fast:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/build
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades/fast
 
 # Convenience name for target.
 src/actividades/CMakeFiles/actividades-main.dir/rule:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades-main.dir/rule
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades-main.dir/rule
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/rule
 
 # Convenience name for target.
@@ -151,7 +192,11 @@ actividades-main: src/actividades/CMakeFiles/actividades-main.dir/rule
 
 # fast build rule for target.
 actividades-main/fast:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/build
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades-main/fast
 
 actividades-main.o: actividades-main.cc.o
@@ -159,7 +204,11 @@ actividades-main.o: actividades-main.cc.o
 
 # target to build an object file
 actividades-main.cc.o:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades-main.cc.o
 
 actividades-main.i: actividades-main.cc.i
@@ -167,7 +216,11 @@ actividades-main.i: actividades-main.cc.i
 
 # target to preprocess a source file
 actividades-main.cc.i:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.i
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.i
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades-main.cc.i
 
 actividades-main.s: actividades-main.cc.s
@@ -175,7 +228,11 @@ actividades-main.s: actividades-main.cc.s
 
 # target to generate assembly for a file
 actividades-main.cc.s:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.s
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.s
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades-main.cc.s
 
 actividades.o: actividades.cc.o
@@ -183,7 +240,11 @@ actividades.o: actividades.cc.o
 
 # target to build an object file
 actividades.cc.o:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.o
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.o
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades.cc.o
 
 actividades.i: actividades.cc.i
@@ -191,7 +252,11 @@ actividades.i: actividades.cc.i
 
 # target to preprocess a source file
 actividades.cc.i:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.i
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.i
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades.cc.i
 
 actividades.s: actividades.cc.s
@@ -199,7 +264,11 @@ actividades.s: actividades.cc.s
 
 # target to generate assembly for a file
 actividades.cc.s:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.s
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/actividades.cc.s
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : actividades.cc.s
 
 # Help Target
@@ -230,6 +299,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : cmake_check_build_system
 

@@ -1,7 +1,13 @@
 src/systema/CMakeFiles/systema.dir/systema.cc.o: \
+<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema/systema.cc \
  /usr/include/stdc-predef.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema/systema.h \
+=======
+ /home/rafa/Escritorio/asdasd/proyecto_final/src/systema/systema.cc \
+ /usr/include/stdc-predef.h \
+ /home/rafa/Escritorio/asdasd/proyecto_final/src/systema/systema.h \
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -134,7 +140,11 @@ src/systema/CMakeFiles/systema.dir/systema.cc.o: \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
+<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona/persona.h \
+=======
+ /home/rafa/Escritorio/asdasd/proyecto_final/src/persona/persona.h \
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \

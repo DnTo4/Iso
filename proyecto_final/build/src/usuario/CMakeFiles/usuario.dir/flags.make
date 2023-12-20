@@ -4,7 +4,11 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
+<<<<<<< HEAD
 CXX_INCLUDES = -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades
+=======
+CXX_INCLUDES = -I/home/rafa/Escritorio/asdasd/proyecto_final/src/usuario -I/home/rafa/Escritorio/asdasd/proyecto_final/src/persona -I/home/rafa/Escritorio/asdasd/proyecto_final/src/actividades
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 CXX_FLAGS = -std=gnu++17
 

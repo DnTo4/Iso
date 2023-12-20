@@ -54,10 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
+=======
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -86,6 +93,7 @@ src/all: src/persona/all
 src/all: src/usuario/all
 src/all: src/menus/all
 src/all: src/systema/all
+src/all: src/app/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -97,6 +105,7 @@ src/preinstall: src/persona/preinstall
 src/preinstall: src/usuario/preinstall
 src/preinstall: src/menus/preinstall
 src/preinstall: src/systema/preinstall
+src/preinstall: src/app/preinstall
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
@@ -108,6 +117,7 @@ src/clean: src/persona/clean
 src/clean: src/usuario/clean
 src/clean: src/menus/clean
 src/clean: src/systema/clean
+src/clean: src/app/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -141,6 +151,23 @@ src/admin/preinstall:
 # Recursive "clean" directory target.
 src/admin/clean: src/admin/CMakeFiles/admin.dir/clean
 .PHONY : src/admin/clean
+
+#=============================================================================
+# Directory level rules for directory src/app
+
+# Recursive "all" directory target.
+src/app/all: src/app/CMakeFiles/app.dir/all
+src/app/all: src/app/CMakeFiles/app-main.dir/all
+.PHONY : src/app/all
+
+# Recursive "preinstall" directory target.
+src/app/preinstall:
+.PHONY : src/app/preinstall
+
+# Recursive "clean" directory target.
+src/app/clean: src/app/CMakeFiles/app.dir/clean
+src/app/clean: src/app/CMakeFiles/app-main.dir/clean
+.PHONY : src/app/clean
 
 #=============================================================================
 # Directory level rules for directory src/director-actividad
@@ -239,14 +266,24 @@ src/usuario/clean: src/usuario/CMakeFiles/usuario.dir/clean
 src/actividades/CMakeFiles/actividades.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades.dir/build.make src/actividades/CMakeFiles/actividades.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=1,2 "Built target actividades"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=1,2 "Built target actividades"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades.dir/all
 
 # Build rule for subdir invocation for target.
 src/actividades/CMakeFiles/actividades.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades.dir/rule
 
 # Convenience name for target.
@@ -265,14 +302,24 @@ src/actividades/CMakeFiles/actividades.dir/clean:
 src/actividades/CMakeFiles/actividades-main.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/actividades/CMakeFiles/actividades-main.dir/build.make src/actividades/CMakeFiles/actividades-main.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=3,4 "Built target actividades-main"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=3,4 "Built target actividades-main"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/all
 
 # Build rule for subdir invocation for target.
 src/actividades/CMakeFiles/actividades-main.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades-main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/actividades/CMakeFiles/actividades-main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/rule
 
 # Convenience name for target.
@@ -291,14 +338,24 @@ src/actividades/CMakeFiles/actividades-main.dir/clean:
 src/admin/CMakeFiles/admin.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/admin/CMakeFiles/admin.dir/build.make src/admin/CMakeFiles/admin.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/admin/CMakeFiles/admin.dir/build.make src/admin/CMakeFiles/admin.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=5 "Built target admin"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=5 "Built target admin"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/admin/CMakeFiles/admin.dir/all
 
 # Build rule for subdir invocation for target.
 src/admin/CMakeFiles/admin.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/admin/CMakeFiles/admin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/admin/CMakeFiles/admin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/admin/CMakeFiles/admin.dir/rule
 
 # Convenience name for target.
@@ -317,14 +374,24 @@ src/admin/CMakeFiles/admin.dir/clean:
 src/director-actividad/CMakeFiles/director-actividad.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/director-actividad/CMakeFiles/director-actividad.dir/build.make src/director-actividad/CMakeFiles/director-actividad.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=6 "Built target director-actividad"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=10 "Built target director-actividad"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/director-actividad/CMakeFiles/director-actividad.dir/all
 
 # Build rule for subdir invocation for target.
 src/director-actividad/CMakeFiles/director-actividad.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/director-actividad/CMakeFiles/director-actividad.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/director-actividad/CMakeFiles/director-actividad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/director-actividad/CMakeFiles/director-actividad.dir/rule
 
 # Convenience name for target.
@@ -344,14 +411,24 @@ src/foro/CMakeFiles/foro.dir/all: src/actividades/CMakeFiles/actividades.dir/all
 src/foro/CMakeFiles/foro.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/foro/CMakeFiles/foro.dir/build.make src/foro/CMakeFiles/foro.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/foro/CMakeFiles/foro.dir/build.make src/foro/CMakeFiles/foro.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=7,8 "Built target foro"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=11,12 "Built target foro"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/foro/CMakeFiles/foro.dir/all
 
 # Build rule for subdir invocation for target.
 src/foro/CMakeFiles/foro.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/foro/CMakeFiles/foro.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/foro/CMakeFiles/foro.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/foro/CMakeFiles/foro.dir/rule
 
 # Convenience name for target.
@@ -370,14 +447,24 @@ src/foro/CMakeFiles/foro.dir/clean:
 src/persona/CMakeFiles/persona.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=11,12 "Built target persona"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=15,16 "Built target persona"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/persona/CMakeFiles/persona.dir/all
 
 # Build rule for subdir invocation for target.
 src/persona/CMakeFiles/persona.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/CMakeFiles/persona.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/CMakeFiles/persona.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/persona/CMakeFiles/persona.dir/rule
 
 # Convenience name for target.
@@ -397,14 +484,24 @@ src/usuario/CMakeFiles/usuario.dir/all: src/actividades/CMakeFiles/actividades.d
 src/usuario/CMakeFiles/usuario.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=15,16 "Built target usuario"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=19,20 "Built target usuario"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/usuario/CMakeFiles/usuario.dir/all
 
 # Build rule for subdir invocation for target.
 src/usuario/CMakeFiles/usuario.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/CMakeFiles/usuario.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/CMakeFiles/usuario.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/usuario/CMakeFiles/usuario.dir/rule
 
 # Convenience name for target.
@@ -429,14 +526,24 @@ src/menus/CMakeFiles/menus.dir/all: src/usuario/CMakeFiles/usuario.dir/all
 src/menus/CMakeFiles/menus.dir/all: src/systema/CMakeFiles/systema.dir/all
 	$(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=9,10 "Built target menus"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=13,14 "Built target menus"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/menus/CMakeFiles/menus.dir/all
 
 # Build rule for subdir invocation for target.
 src/menus/CMakeFiles/menus.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/menus/CMakeFiles/menus.dir/rule
 
 # Convenience name for target.
@@ -455,14 +562,24 @@ src/menus/CMakeFiles/menus.dir/clean:
 src/systema/CMakeFiles/systema.dir/all: src/persona/CMakeFiles/persona.dir/all
 	$(MAKE) $(MAKESILENT) -f src/systema/CMakeFiles/systema.dir/build.make src/systema/CMakeFiles/systema.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/systema/CMakeFiles/systema.dir/build.make src/systema/CMakeFiles/systema.dir/build
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=13,14 "Built target systema"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=17,18 "Built target systema"
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/systema/CMakeFiles/systema.dir/all
 
 # Build rule for subdir invocation for target.
 src/systema/CMakeFiles/systema.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/systema/CMakeFiles/systema.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/systema/CMakeFiles/systema.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/systema/CMakeFiles/systema.dir/rule
 
 # Convenience name for target.
@@ -473,6 +590,73 @@ systema: src/systema/CMakeFiles/systema.dir/rule
 src/systema/CMakeFiles/systema.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/systema/CMakeFiles/systema.dir/build.make src/systema/CMakeFiles/systema.dir/clean
 .PHONY : src/systema/CMakeFiles/systema.dir/clean
+
+#=============================================================================
+# Target rules for target src/app/CMakeFiles/app.dir
+
+# All Build rule for target.
+src/app/CMakeFiles/app.dir/all: src/actividades/CMakeFiles/actividades.dir/all
+src/app/CMakeFiles/app.dir/all: src/admin/CMakeFiles/admin.dir/all
+src/app/CMakeFiles/app.dir/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
+src/app/CMakeFiles/app.dir/all: src/foro/CMakeFiles/foro.dir/all
+src/app/CMakeFiles/app.dir/all: src/persona/CMakeFiles/persona.dir/all
+src/app/CMakeFiles/app.dir/all: src/usuario/CMakeFiles/usuario.dir/all
+src/app/CMakeFiles/app.dir/all: src/menus/CMakeFiles/menus.dir/all
+src/app/CMakeFiles/app.dir/all: src/systema/CMakeFiles/systema.dir/all
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=6,7 "Built target app"
+.PHONY : src/app/CMakeFiles/app.dir/all
+
+# Build rule for subdir invocation for target.
+src/app/CMakeFiles/app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+.PHONY : src/app/CMakeFiles/app.dir/rule
+
+# Convenience name for target.
+app: src/app/CMakeFiles/app.dir/rule
+.PHONY : app
+
+# clean rule for target.
+src/app/CMakeFiles/app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/clean
+.PHONY : src/app/CMakeFiles/app.dir/clean
+
+#=============================================================================
+# Target rules for target src/app/CMakeFiles/app-main.dir
+
+# All Build rule for target.
+src/app/CMakeFiles/app-main.dir/all: src/actividades/CMakeFiles/actividades.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/admin/CMakeFiles/admin.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/director-actividad/CMakeFiles/director-actividad.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/foro/CMakeFiles/foro.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/persona/CMakeFiles/persona.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/usuario/CMakeFiles/usuario.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/menus/CMakeFiles/menus.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/systema/CMakeFiles/systema.dir/all
+src/app/CMakeFiles/app-main.dir/all: src/app/CMakeFiles/app.dir/all
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=8,9 "Built target app-main"
+.PHONY : src/app/CMakeFiles/app-main.dir/all
+
+# Build rule for subdir invocation for target.
+src/app/CMakeFiles/app-main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app-main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+.PHONY : src/app/CMakeFiles/app-main.dir/rule
+
+# Convenience name for target.
+app-main: src/app/CMakeFiles/app-main.dir/rule
+.PHONY : app-main
+
+# clean rule for target.
+src/app/CMakeFiles/app-main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/clean
+.PHONY : src/app/CMakeFiles/app-main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

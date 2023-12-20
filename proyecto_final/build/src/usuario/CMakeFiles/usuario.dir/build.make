@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
+=======
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Include any dependencies generated for this target.
 include src/usuario/CMakeFiles/usuario.dir/depend.make
@@ -72,6 +79,7 @@ include src/usuario/CMakeFiles/usuario.dir/flags.make
 src/usuario/CMakeFiles/usuario.dir/usuario.cc.o: src/usuario/CMakeFiles/usuario.dir/flags.make
 src/usuario/CMakeFiles/usuario.dir/usuario.cc.o: ../src/usuario/usuario.cc
 src/usuario/CMakeFiles/usuario.dir/usuario.cc.o: src/usuario/CMakeFiles/usuario.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/usuario/CMakeFiles/usuario.dir/usuario.cc.o"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/usuario/CMakeFiles/usuario.dir/usuario.cc.o -MF CMakeFiles/usuario.dir/usuario.cc.o.d -o CMakeFiles/usuario.dir/usuario.cc.o -c /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario/usuario.cc
 
@@ -82,6 +90,18 @@ src/usuario/CMakeFiles/usuario.dir/usuario.cc.i: cmake_force
 src/usuario/CMakeFiles/usuario.dir/usuario.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usuario.dir/usuario.cc.s"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario/usuario.cc -o CMakeFiles/usuario.dir/usuario.cc.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/usuario/CMakeFiles/usuario.dir/usuario.cc.o"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/usuario/CMakeFiles/usuario.dir/usuario.cc.o -MF CMakeFiles/usuario.dir/usuario.cc.o.d -o CMakeFiles/usuario.dir/usuario.cc.o -c /home/rafa/Escritorio/asdasd/proyecto_final/src/usuario/usuario.cc
+
+src/usuario/CMakeFiles/usuario.dir/usuario.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usuario.dir/usuario.cc.i"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/asdasd/proyecto_final/src/usuario/usuario.cc > CMakeFiles/usuario.dir/usuario.cc.i
+
+src/usuario/CMakeFiles/usuario.dir/usuario.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usuario.dir/usuario.cc.s"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/asdasd/proyecto_final/src/usuario/usuario.cc -o CMakeFiles/usuario.dir/usuario.cc.s
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Object files for target usuario
 usuario_OBJECTS = \
@@ -93,19 +113,33 @@ usuario_EXTERNAL_OBJECTS =
 src/usuario/libusuario.a: src/usuario/CMakeFiles/usuario.dir/usuario.cc.o
 src/usuario/libusuario.a: src/usuario/CMakeFiles/usuario.dir/build.make
 src/usuario/libusuario.a: src/usuario/CMakeFiles/usuario.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libusuario.a"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -P CMakeFiles/usuario.dir/cmake_clean_target.cmake
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usuario.dir/link.txt --verbose=$(VERBOSE)
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libusuario.a"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -P CMakeFiles/usuario.dir/cmake_clean_target.cmake
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usuario.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Rule to build all files generated by this target.
 src/usuario/CMakeFiles/usuario.dir/build: src/usuario/libusuario.a
 .PHONY : src/usuario/CMakeFiles/usuario.dir/build
 
 src/usuario/CMakeFiles/usuario.dir/clean:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -P CMakeFiles/usuario.dir/cmake_clean.cmake
 .PHONY : src/usuario/CMakeFiles/usuario.dir/clean
 
 src/usuario/CMakeFiles/usuario.dir/depend:
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Andres/Desktop/Iso/proyecto_final /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario/CMakeFiles/usuario.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario && $(CMAKE_COMMAND) -P CMakeFiles/usuario.dir/cmake_clean.cmake
+.PHONY : src/usuario/CMakeFiles/usuario.dir/clean
+
+src/usuario/CMakeFiles/usuario.dir/depend:
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/asdasd/proyecto_final /home/rafa/Escritorio/asdasd/proyecto_final/src/usuario /home/rafa/Escritorio/asdasd/proyecto_final/build /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario/CMakeFiles/usuario.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/usuario/CMakeFiles/usuario.dir/depend
 

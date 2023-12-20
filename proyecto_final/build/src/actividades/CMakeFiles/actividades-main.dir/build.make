@@ -53,10 +53,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
+=======
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Include any dependencies generated for this target.
 include src/actividades/CMakeFiles/actividades-main.dir/depend.make
@@ -72,6 +79,7 @@ include src/actividades/CMakeFiles/actividades-main.dir/flags.make
 src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o: src/actividades/CMakeFiles/actividades-main.dir/flags.make
 src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o: ../src/actividades/actividades-main.cc
 src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o: src/actividades/CMakeFiles/actividades-main.dir/compiler_depend.ts
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o -MF CMakeFiles/actividades-main.dir/actividades-main.cc.o.d -o CMakeFiles/actividades-main.dir/actividades-main.cc.o -c /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades-main.cc
 
@@ -82,6 +90,18 @@ src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.i: cmake_for
 src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividades-main.dir/actividades-main.cc.s"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades-main.cc -o CMakeFiles/actividades-main.dir/actividades-main.cc.s
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.o -MF CMakeFiles/actividades-main.dir/actividades-main.cc.o.d -o CMakeFiles/actividades-main.dir/actividades-main.cc.o -c /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades-main.cc
+
+src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actividades-main.dir/actividades-main.cc.i"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades-main.cc > CMakeFiles/actividades-main.dir/actividades-main.cc.i
+
+src/actividades/CMakeFiles/actividades-main.dir/actividades-main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividades-main.dir/actividades-main.cc.s"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades-main.cc -o CMakeFiles/actividades-main.dir/actividades-main.cc.s
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Object files for target actividades-main
 actividades__main_OBJECTS = \
@@ -94,18 +114,31 @@ src/actividades/actividades-main: src/actividades/CMakeFiles/actividades-main.di
 src/actividades/actividades-main: src/actividades/CMakeFiles/actividades-main.dir/build.make
 src/actividades/actividades-main: src/actividades/libactividades.a
 src/actividades/actividades-main: src/actividades/CMakeFiles/actividades-main.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable actividades-main"
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/actividades-main.dir/link.txt --verbose=$(VERBOSE)
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable actividades-main"
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/actividades-main.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Rule to build all files generated by this target.
 src/actividades/CMakeFiles/actividades-main.dir/build: src/actividades/actividades-main
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/build
 
 src/actividades/CMakeFiles/actividades-main.dir/clean:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades && $(CMAKE_COMMAND) -P CMakeFiles/actividades-main.dir/cmake_clean.cmake
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/clean
 
 src/actividades/CMakeFiles/actividades-main.dir/depend:
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/Andres/Desktop/Iso/proyecto_final /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades/CMakeFiles/actividades-main.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades && $(CMAKE_COMMAND) -P CMakeFiles/actividades-main.dir/cmake_clean.cmake
+.PHONY : src/actividades/CMakeFiles/actividades-main.dir/clean
+
+src/actividades/CMakeFiles/actividades-main.dir/depend:
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rafa/Escritorio/asdasd/proyecto_final /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades /home/rafa/Escritorio/asdasd/proyecto_final/build /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades /home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades/CMakeFiles/actividades-main.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/actividades/CMakeFiles/actividades-main.dir/depend
 

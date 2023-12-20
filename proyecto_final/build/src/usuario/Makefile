@@ -57,10 +57,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
+=======
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +104,24 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario//CMakeFiles/progress.marks
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/asdasd/proyecto_final/build/src/usuario//CMakeFiles/progress.marks
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : all
 
 # The main clean target
 clean:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/clean
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/clean
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +130,38 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/preinstall
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/preinstall
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/preinstall
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/preinstall
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : depend
 
 # Convenience name for target.
 src/usuario/CMakeFiles/usuario.dir/rule:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/CMakeFiles/usuario.dir/rule
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/usuario/CMakeFiles/usuario.dir/rule
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/usuario/CMakeFiles/usuario.dir/rule
 
 # Convenience name for target.
@@ -137,7 +170,11 @@ usuario: src/usuario/CMakeFiles/usuario.dir/rule
 
 # fast build rule for target.
 usuario/fast:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/build
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/build
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : usuario/fast
 
 usuario.o: usuario.cc.o
@@ -145,7 +182,11 @@ usuario.o: usuario.cc.o
 
 # target to build an object file
 usuario.cc.o:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.o
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.o
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : usuario.cc.o
 
 usuario.i: usuario.cc.i
@@ -153,7 +194,11 @@ usuario.i: usuario.cc.i
 
 # target to preprocess a source file
 usuario.cc.i:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.i
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.i
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : usuario.cc.i
 
 usuario.s: usuario.cc.s
@@ -161,7 +206,11 @@ usuario.s: usuario.cc.s
 
 # target to generate assembly for a file
 usuario.cc.s:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.s
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/usuario/CMakeFiles/usuario.dir/build.make src/usuario/CMakeFiles/usuario.dir/usuario.cc.s
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : usuario.cc.s
 
 # Help Target
@@ -188,6 +237,10 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+=======
+	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+>>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : cmake_check_build_system
 

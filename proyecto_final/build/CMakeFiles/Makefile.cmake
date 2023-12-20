@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/CMakeLists.txt"
   "../src/actividades/CMakeLists.txt"
   "../src/admin/CMakeLists.txt"
+  "../src/app/CMakeLists.txt"
   "../src/director-actividad/CMakeLists.txt"
   "../src/foro/CMakeLists.txt"
   "../src/menus/CMakeLists.txt"
@@ -132,6 +133,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/usuario/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/menus/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/systema/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -145,4 +147,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/usuario/CMakeFiles/usuario.dir/DependInfo.cmake"
   "src/menus/CMakeFiles/menus.dir/DependInfo.cmake"
   "src/systema/CMakeFiles/systema.dir/DependInfo.cmake"
+  "src/app/CMakeFiles/app.dir/DependInfo.cmake"
+  "src/app/CMakeFiles/app-main.dir/DependInfo.cmake"
   )
