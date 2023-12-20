@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/proyecto_final/src
+# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,14 +44,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rafa/Escritorio/proyecto_final/build/src/actividades/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/admin/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/director-actividad/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/foro/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/persona/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/usuario/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/menus/cmake_install.cmake")
-  include("/home/rafa/Escritorio/proyecto_final/build/src/systema/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/admin/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/director-actividad/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/foro/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/usuario/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/menus/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/systema/cmake_install.cmake")
 
 endif()
 

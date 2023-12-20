@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/proyecto_final/src/systema
+# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

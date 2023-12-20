@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/proyecto_final
+CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/proyecto_final/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rafa/Escritorio/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/proyecto_final/build/src/menus//CMakeFiles/progress.marks
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/proyecto_final/build/CMakeFiles 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/menus//CMakeFiles/progress.marks
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/clean
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/menus/CMakeFiles/menus.dir/rule:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/rule
 .PHONY : src/menus/CMakeFiles/menus.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ menus: src/menus/CMakeFiles/menus.dir/rule
 
 # fast build rule for target.
 menus/fast:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/build
 .PHONY : menus/fast
 
 menus.o: menus.cc.o
@@ -145,7 +145,7 @@ menus.o: menus.cc.o
 
 # target to build an object file
 menus.cc.o:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.o
 .PHONY : menus.cc.o
 
 menus.i: menus.cc.i
@@ -153,7 +153,7 @@ menus.i: menus.cc.i
 
 # target to preprocess a source file
 menus.cc.i:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.i
 .PHONY : menus.cc.i
 
 menus.s: menus.cc.s
@@ -161,7 +161,7 @@ menus.s: menus.cc.s
 
 # target to generate assembly for a file
 menus.cc.s:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.s
 .PHONY : menus.cc.s
 
 # Help Target
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rafa/Escritorio/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

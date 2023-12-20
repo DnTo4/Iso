@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rafa/Escritorio/proyecto_final/src/actividades
-# Build directory: /home/rafa/Escritorio/proyecto_final/build/src/actividades
+# Source directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades
+# Build directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/actividades
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
