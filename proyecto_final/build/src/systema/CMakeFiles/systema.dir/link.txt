@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsystema.a CMakeFiles/systema.dir/systema.cc.o
+/usr/bin/ranlib libsystema.a

@@ -110,7 +110,7 @@ class Foro{ // .H Y .CC
 
 };
 
-class Usuario: public Persona //--->And .H
+class Usuario: public Persona //--->And .H Y .CC
 {
     private:
         std::list<Actividad> listaPreinscrito_;
@@ -128,7 +128,7 @@ class Usuario: public Persona //--->And .H
         bool FileDataUser(std::string name);
         bool LeerDataUser(std::string name);
 };
-class Director: public Persona //--->And
+class Director: public Persona //--->And .H Y .CC (no tiene xd)
 {
     private:
     public:
@@ -140,7 +140,7 @@ class Director: public Persona //--->And
         void DirectorMenu(Director user);
 };
 
-class Admin: public Persona //--->And .H
+class Admin: public Persona //--->And .H y .CC (no tiene xd)
 {
     private:
     public:

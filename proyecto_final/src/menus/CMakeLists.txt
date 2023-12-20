@@ -1,0 +1,8 @@
+add_library(menus menus.cc)
+target_link_libraries(menus PUBLIC systema)
+target_link_libraries(menus PUBLIC usuario)
+target_link_libraries(menus PUBLIC admin)
+target_link_libraries(menus PUBLIC actividades)
+target_link_libraries(menus PUBLIC foro)
+target_link_libraries(menus PUBLIC director-actividad)
+target_include_directories(menus PUBLIC ${CMAKE_CURRENT_LIST_DIR})

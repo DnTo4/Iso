@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmenus.a CMakeFiles/menus.dir/menus.cc.o
+/usr/bin/ranlib libmenus.a

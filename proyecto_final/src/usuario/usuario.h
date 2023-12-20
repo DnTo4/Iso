@@ -2,6 +2,7 @@
 #define _USUARIO_
 
 #include <string>
+#include <list>
 #include "persona.h"
 #include "actividades.h"
 

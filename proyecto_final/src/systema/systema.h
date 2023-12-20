@@ -4,8 +4,6 @@
 #include <string>
 #include <list>
 #include "persona.h"
-#include "usuario.h"
-
 
 class Systema//--->And
 {
@@ -16,7 +14,7 @@ class Systema//--->And
 
     public:
 
-        Systema(){numero_usuarios_=0;};
+        Systema(){numero_usuarios_=0;}
         bool AddUsuario(Persona usuario);
         bool DeleteUsuario(std::string correo);
         bool DeleteUsuario(Persona usuario){return DeleteUsuario(usuario.ObtenerEmail());};

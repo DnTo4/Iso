@@ -1,0 +1,2 @@
+/usr/bin/ar qc libforo.a CMakeFiles/foro.dir/foro.cc.o
+/usr/bin/ranlib libforo.a

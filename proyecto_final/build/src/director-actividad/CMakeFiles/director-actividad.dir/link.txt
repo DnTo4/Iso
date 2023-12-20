@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdirector-actividad.a 
+/usr/bin/ranlib libdirector-actividad.a

@@ -1,5 +1,6 @@
 #include "foro.h"
 #include <iostream>
+#include <sstream>
 #include <fstream>
 
 bool Foro::DeleteActividad(std::string id_title){

@@ -12,7 +12,7 @@ class Director: public Persona //--->And
          std::string rol, std::string dni="empty",
          std::string nombre="empty",
          std::string facultad="empty"):Persona(email, contrasenia,
-         rol, dni,nombre, facultad){};
+         rol, dni,nombre, facultad){}
         void DirectorMenu(Director user);
 };
 
