@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "systema.h"
+#include "systema/systema.h"
 
 TEST(SystemaTest, AddUsuario) {
     Systema systema;

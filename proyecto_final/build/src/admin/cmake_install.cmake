@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/admin
-=======
-# Install script for directory: /home/rafa/Escritorio/asdasd/proyecto_final/src/admin
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

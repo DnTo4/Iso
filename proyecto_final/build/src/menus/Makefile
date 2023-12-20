@@ -57,17 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
-=======
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,26 +95,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/menus//CMakeFiles/progress.marks
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/asdasd/proyecto_final/build/src/menus//CMakeFiles/progress.marks
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : all
 
 # The main clean target
 clean:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/clean
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/clean
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : clean
 
 # The main clean target
@@ -130,38 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/preinstall
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : depend
 
 # Convenience name for target.
 src/menus/CMakeFiles/menus.dir/rule:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/rule
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/menus/CMakeFiles/menus.dir/rule
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : src/menus/CMakeFiles/menus.dir/rule
 
 # Convenience name for target.
@@ -170,11 +182,7 @@ menus: src/menus/CMakeFiles/menus.dir/rule
 
 # fast build rule for target.
 menus/fast:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/build
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/build
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : menus/fast
 
 menus.o: menus.cc.o
@@ -182,11 +190,7 @@ menus.o: menus.cc.o
 
 # target to build an object file
 menus.cc.o:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.o
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.o
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : menus.cc.o
 
 menus.i: menus.cc.i
@@ -194,11 +198,7 @@ menus.i: menus.cc.i
 
 # target to preprocess a source file
 menus.cc.i:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.i
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.i
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : menus.cc.i
 
 menus.s: menus.cc.s
@@ -206,11 +206,7 @@ menus.s: menus.cc.s
 
 # target to generate assembly for a file
 menus.cc.s:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.s
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/menus/CMakeFiles/menus.dir/build.make src/menus/CMakeFiles/menus.dir/menus.cc.s
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : menus.cc.s
 
 # Help Target
@@ -220,6 +216,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... menus"
@@ -237,10 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-<<<<<<< HEAD
 	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-=======
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : cmake_check_build_system
 

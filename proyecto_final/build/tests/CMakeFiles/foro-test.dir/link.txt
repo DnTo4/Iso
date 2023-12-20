@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/foro-test.dir/foro-test.cc.o -o foro-test  ../src/foro/libforo.a -lactividad ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a ../src/actividades/libactividades.a ../src/persona/libpersona.a 

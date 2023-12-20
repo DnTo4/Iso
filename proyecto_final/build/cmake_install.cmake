@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
-=======
-# Install script for directory: /home/rafa/Escritorio/asdasd/proyecto_final
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -48,11 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-<<<<<<< HEAD
   include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/cmake_install.cmake")
-=======
-  include("/home/rafa/Escritorio/asdasd/proyecto_final/build/src/cmake_install.cmake")
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests/cmake_install.cmake")
 
 endif()
 
@@ -64,9 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
 file(WRITE "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "/home/rafa/Escritorio/asdasd/proyecto_final/build/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -20,14 +20,14 @@ add_test(persona-gtests persona-test)
 # Testing systema library
 add_executable(systema-test systema-test.cc)
 target_link_libraries(systema-test
- PRIVATE GTest::GTest systema foro actividad persona usuario admin director)
+ PRIVATE GTest::GTest systema foro actividades persona usuario admin director)
 add_test(product_gtests systema-test)
 
 # Testing actividad library
-add_executable(actividad-test actividad-test.cc)
-target_link_libraries(actividad-test
- PRIVATE GTest::GTest actividad)
-add_test(tv_gtests actividad-test)
+add_executable(actividades-test actividades-test.cc)
+target_link_libraries(actividades-test
+ PRIVATE GTest::GTest actividades)
+add_test(tv_gtests actividades-test)
 
 # Testing foro library
 add_executable(foro-test foro-test.cc)

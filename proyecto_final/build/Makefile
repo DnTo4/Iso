@@ -57,17 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
-=======
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -102,17 +95,56 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/asdasd/proyecto_final/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
 .PHONY : all
 
 # The main clean target
@@ -282,6 +314,110 @@ app-main/fast:
 	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/build
 .PHONY : app-main/fast
 
+#=============================================================================
+# Target rules for targets named persona-test
+
+# Build rule for target.
+persona-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 persona-test
+.PHONY : persona-test
+
+# fast build rule for target.
+persona-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
+.PHONY : persona-test/fast
+
+#=============================================================================
+# Target rules for targets named systema-test
+
+# Build rule for target.
+systema-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 systema-test
+.PHONY : systema-test
+
+# fast build rule for target.
+systema-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/build
+.PHONY : systema-test/fast
+
+#=============================================================================
+# Target rules for targets named actividad-test
+
+# Build rule for target.
+actividad-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 actividad-test
+.PHONY : actividad-test
+
+# fast build rule for target.
+actividad-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividad-test.dir/build.make tests/CMakeFiles/actividad-test.dir/build
+.PHONY : actividad-test/fast
+
+#=============================================================================
+# Target rules for targets named foro-test
+
+# Build rule for target.
+foro-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 foro-test
+.PHONY : foro-test
+
+# fast build rule for target.
+foro-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/build
+.PHONY : foro-test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -289,8 +425,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... actividad-test"
 	@echo "... actividades"
 	@echo "... actividades-main"
 	@echo "... admin"
@@ -298,9 +439,16 @@ help:
 	@echo "... app-main"
 	@echo "... director-actividad"
 	@echo "... foro"
+	@echo "... foro-test"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... menus"
 	@echo "... persona"
+	@echo "... persona-test"
 	@echo "... systema"
+	@echo "... systema-test"
 	@echo "... usuario"
 .PHONY : help
 

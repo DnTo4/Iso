@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/actividad-test.dir/actividad-test.cc.o -o actividad-test  -lactividad ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a 

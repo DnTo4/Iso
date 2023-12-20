@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/asdasd/proyecto_final
+CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/asdasd/proyecto_final/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -95,16 +95,61 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/asdasd/proyecto_final/build/src/app//CMakeFiles/progress.marks
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/asdasd/proyecto_final/build/CMakeFiles 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/app//CMakeFiles/progress.marks
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/clean
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/app/CMakeFiles/app.dir/rule:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app.dir/rule
 .PHONY : src/app/CMakeFiles/app.dir/rule
 
 # Convenience name for target.
@@ -137,12 +182,12 @@ app: src/app/CMakeFiles/app.dir/rule
 
 # fast build rule for target.
 app/fast:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/build
 .PHONY : app/fast
 
 # Convenience name for target.
 src/app/CMakeFiles/app-main.dir/rule:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app-main.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app-main.dir/rule
 .PHONY : src/app/CMakeFiles/app-main.dir/rule
 
 # Convenience name for target.
@@ -151,7 +196,7 @@ app-main: src/app/CMakeFiles/app-main.dir/rule
 
 # fast build rule for target.
 app-main/fast:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/build
 .PHONY : app-main/fast
 
 app.o: app.cc.o
@@ -159,8 +204,8 @@ app.o: app.cc.o
 
 # target to build an object file
 app.cc.o:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.o
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.o
 .PHONY : app.cc.o
 
 app.i: app.cc.i
@@ -168,8 +213,8 @@ app.i: app.cc.i
 
 # target to preprocess a source file
 app.cc.i:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.i
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.i
 .PHONY : app.cc.i
 
 app.s: app.cc.s
@@ -177,8 +222,8 @@ app.s: app.cc.s
 
 # target to generate assembly for a file
 app.cc.s:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.s
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/app.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app-main.dir/build.make src/app/CMakeFiles/app-main.dir/app.cc.s
 .PHONY : app.cc.s
 
 # Help Target
@@ -188,6 +233,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... app"
@@ -206,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rafa/Escritorio/asdasd/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

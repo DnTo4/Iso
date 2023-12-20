@@ -12,11 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-<<<<<<< HEAD
   "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
-=======
-  "/home/rafa/Escritorio/asdasd/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
   )
 
 # Fortran module output directory.

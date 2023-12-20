@@ -1,9 +1,5 @@
 src/menus/CMakeFiles/menus.dir/menus.cc.o: \
-<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/menus/menus.cc \
-=======
- /home/rafa/Escritorio/asdasd/proyecto_final/src/menus/menus.cc \
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -150,27 +146,14 @@ src/menus/CMakeFiles/menus.dir/menus.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
-<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema/systema.h \
-=======
- /home/rafa/Escritorio/asdasd/proyecto_final/src/systema/systema.h \
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
-<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona/persona.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario/usuario.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro/foro.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/admin/admin.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/director-actividad/director-actividad.h
-=======
- /home/rafa/Escritorio/asdasd/proyecto_final/src/persona/persona.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/usuario/usuario.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/foro/foro.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/admin/admin.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/director-actividad/director-actividad.h
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65

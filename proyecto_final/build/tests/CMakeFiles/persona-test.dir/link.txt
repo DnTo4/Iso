@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/persona-test.dir/persona-test.cc.o -o persona-test  ../src/persona/libpersona.a ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a 

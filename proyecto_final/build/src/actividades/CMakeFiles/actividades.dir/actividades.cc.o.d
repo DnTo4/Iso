@@ -1,13 +1,7 @@
 src/actividades/CMakeFiles/actividades.dir/actividades.cc.o: \
-<<<<<<< HEAD
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.cc \
  /usr/include/stdc-predef.h \
  /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.h \
-=======
- /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades.cc \
- /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/asdasd/proyecto_final/src/actividades/actividades.h \
->>>>>>> d56f12ef443918ac4520125815e42f122e242a65
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
