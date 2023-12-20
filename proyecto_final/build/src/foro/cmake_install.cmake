@@ -1,4 +1,4 @@
-# Install script for directory: /home/rafa/Escritorio/Iso/proyecto_final/src/foro
+# Install script for directory: /home/rafa/Escritorio/asdasd/proyecto_final/src/foro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

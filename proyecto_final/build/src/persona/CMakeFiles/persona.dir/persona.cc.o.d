@@ -1,7 +1,7 @@
 src/persona/CMakeFiles/persona.dir/persona.cc.o: \
- /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.cc \
+ /home/rafa/Escritorio/asdasd/proyecto_final/src/persona/persona.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.h \
+ /home/rafa/Escritorio/asdasd/proyecto_final/src/persona/persona.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

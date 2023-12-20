@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/src/usuario/usuario.cc" "src/usuario/CMakeFiles/usuario.dir/usuario.cc.o" "gcc" "src/usuario/CMakeFiles/usuario.dir/usuario.cc.o.d"
+  "/home/rafa/Escritorio/asdasd/proyecto_final/src/usuario/usuario.cc" "src/usuario/CMakeFiles/usuario.dir/usuario.cc.o" "gcc" "src/usuario/CMakeFiles/usuario.dir/usuario.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/src/actividades/CMakeFiles/actividades.dir/DependInfo.cmake"
+  "/home/rafa/Escritorio/asdasd/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
+  "/home/rafa/Escritorio/asdasd/proyecto_final/build/src/actividades/CMakeFiles/actividades.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.cc" "src/persona/CMakeFiles/persona.dir/persona.cc.o" "gcc" "src/persona/CMakeFiles/persona.dir/persona.cc.o.d"
+  "/home/rafa/Escritorio/asdasd/proyecto_final/src/persona/persona.cc" "src/persona/CMakeFiles/persona.dir/persona.cc.o" "gcc" "src/persona/CMakeFiles/persona.dir/persona.cc.o.d"
   )
 
 # Targets to which this target links.
