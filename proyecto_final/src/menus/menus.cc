@@ -26,23 +26,30 @@ void Usuario::UserMenu(Usuario user)
     user.LeerDataUser(file_name);
     do
     {
-        std::cout << "Menú:\n";
-        std::cout << "1.Visualizar actividades disponibles.\n";
-        std::cout << "2.Apuntarse a una actividad\n";
-        std::cout << "3.Editar perfil\n";
-        std::cout << "4.Actividades a las que estoy preinscrito\n";
-        std::cout << "0.Salir\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "1. Visualizar actividades disponibles\n";
+        std::cout << "2. Apuntarse a una actividad\n";
+        std::cout << "3. Editar perfil\n";
+        std::cout << "4. Actividades a las que estoy preinscrito\n";
+        std::cout << "0. Salir\n";
+        std::cout << "Ingrese su opción: ";
         std::cin >> on;
 
         switch(on)
         {
             case 1:
-                std::cout<<"\n________________________________________________________\n";
-                std::cout<<"Las Actividades disponibles actualmente son:\n";
-                std::cout<<"________________________________________________________\n";
+                std::cout << "\n==========================================\n";
+                std::cout << "       Actividades Disponibles\n";
+                std::cout << "==========================================\n";
+
+                // Displaying activity titles
                 foroCopy.GetTitulos();
-                std::cout<<"\n________________________________________________________\n";
+
+                std::cout << "==========================================\n\n";
                 break;
+
             case 2:
                 //foro añadir usuario a actividad
                 std::cout << "Ingrese el titulo de la actividad:\n";
@@ -54,11 +61,15 @@ void Usuario::UserMenu(Usuario user)
                 user.Preinscribe(aux);
                 break;
             case 3:
-                std::cout << "Menú:\n";
-                std::cout << "1.Cambiar contraseña.\n";
-                std::cout << "2.Cambiar nombre\n";
-                std::cout << "0.Salir\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                std::cout << "           Menú\n";
+                std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                std::cout << "1. Cambiar contraseña\n";
+                std::cout << "2. Cambiar nombre\n";
+                std::cout << "0. Salir\n";
+                std::cout << "Ingrese su opción: ";
                 std::cin >> option;
+
                 switch(option)
                 {
                     case 1:
@@ -92,11 +103,15 @@ void Usuario::UserMenu(Usuario user)
                 }
                 break;
             case 4:
-                std::cout<<"\n________________________________________________________\n";
-                std::cout<<"Las Actividades a las que actualmente estas apuntado son:\n";
-                std::cout<<"________________________________________________________\n";
+                std::cout << "\n==========================================\n";
+                std::cout << "  Actividades a las que estás apuntado\n";
+                std::cout << "==========================================\n";
+
+                // Displaying enrolled activities
                 user.VerPreInscripcion();
-                std::cout<<"\n________________________________________________________\n";
+
+                std::cout << "==========================================\n\n";
+
                 break;
             case 0:
                 std::cout << "Saliendo...\n";
@@ -116,11 +131,15 @@ void Admin::AdminMenu(Admin user)
     infCopy.LeerDatosUsuarios();
     do
     {
-        std::cout << "Menú:\n";
-        std::cout << "1.Menú Actividades\n";
-        std::cout << "2.Menú Sistema\n";
-        std::cout << "0.Salir\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "1. Menú Actividades\n";
+        std::cout << "2. Menú Sistema\n";
+        std::cout << "0. Salir\n";
+        std::cout << "Ingrese su opción: ";
         std::cin >> on;
+
 
         switch(on)
         {
@@ -148,11 +167,14 @@ void Director::DirectorMenu(Director user)
     int option;
     do
     {
-        std::cout << "Menú:\n";
-        std::cout << "1.Menú Actividades\n";
-        std::cout << "2.Visualizar Actividades\n";
-        std::cout << "3.Editar Perfil\n";
-        std::cout << "0.Salir\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "1. Menú Actividades\n";
+        std::cout << "2. Visualizar Actividades\n";
+        std::cout << "3. Editar Perfil\n";
+        std::cout << "0. Salir\n";
+        std::cout << "Ingrese su opción: ";
         std::cin >> on;
         switch(on)
         {
@@ -160,18 +182,25 @@ void Director::DirectorMenu(Director user)
                 foroCopy.Control_actividad(user);
                 break;
             case 2:
-                std::cout<<"\n________________________________________________________\n";
-                std::cout<<"Las Actividades disponibles actualmente son:\n";
-                std::cout<<"________________________________________________________\n";
+                std::cout << "\n==========================================\n";
+                std::cout << "       Actividades Disponibles\n";
+                std::cout << "==========================================\n";
+
+                // Displaying activity titles
                 foroCopy.GetTitulos();
-                std::cout<<"\n________________________________________________________\n";
+
+                std::cout << "==========================================\n\n";
                 break;
             case 3:
-                std::cout << "Menú:\n";
-                std::cout << "1.Cambiar contraseña.\n";
-                std::cout << "2.Cambiar nombre\n";
-                std::cout << "0.Salir\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                std::cout << "           Menú\n";
+                std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                std::cout << "1. Cambiar contraseña\n";
+                std::cout << "2. Cambiar nombre\n";
+                std::cout << "0. Salir\n";
+                std::cout << "Ingrese su opción: ";
                 std::cin >> option;
+
                 switch(option)
                 {
                     case 1:

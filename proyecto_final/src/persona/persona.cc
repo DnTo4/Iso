@@ -13,10 +13,15 @@ Persona::Persona( std::string email, std::string contrasenia, std::string rol, s
 
 void Persona::MostrarPersona()//--->And
 {
-    std::cout << "DNI: " << dni_ << "\n"; 
-    std::cout << "Nombre completo: " << nombrecompleto_ << "\n"; 
-    std::cout << "Correo: " << email_ << "\n"; 
-    std::cout << "Facultad: " << facultad_ << "\n"; 
-    std::cout << "Rol: " << rol_ << "\n";
+    std::cout << "\n========================================\n";
+    std::cout << "      Información del Usuario\n";
+    std::cout << "========================================\n";
+    std::cout << "DNI:             " << dni_ << "\n";
+    std::cout << "Nombre completo: " << nombrecompleto_ << "\n";
+    std::cout << "Correo:          " << email_ << "\n";
+    std::cout << "Facultad:        " << facultad_ << "\n";
+    std::cout << "Rol:             " << rol_ << "\n";
+    std::cout << "========================================\n\n";
+
 
 }

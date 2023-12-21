@@ -2,6 +2,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+//
 
 bool Foro::DeleteActividad(std::string id_title){
     if (list_actividades_.empty()) {return false;}
@@ -41,15 +42,18 @@ bool Foro::ModActividad(Actividad activ){
     int new_num_usrs;
     DeleteActividad(activ);
     do {
-        std::cout << "\nMenu:\n";
-        std::cout << "1. Modificar Titulo\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "1. Modificar Título\n";
         std::cout << "2. Modificar Creador\n";
-        std::cout << "3. Modificar Descripcion\n";
-        std::cout << "4. Modificar Numero de Usuarios\n";
-        std::cout << "5. Mostrar Informacion\n";
+        std::cout << "3. Modificar Descripción\n";
+        std::cout << "4. Modificar Número de Usuarios\n";
+        std::cout << "5. Mostrar Información\n";
         std::cout << "0. Salir\n";
-        std::cout << "Seleccione una opcion: ";
+        std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
+
 
         switch (opcion) {
         case 1:
@@ -104,7 +108,7 @@ Actividad Foro::GetActividad(std::string titulo) {
             return aux;
         }
     }
-    std::cout<<"No se a encontrado la actividad especidicada"<<std::endl;
+    std::cout<<"No se ha encontrado la actividad especificada"<<std::endl;
     exit(EXIT_FAILURE);
 }
 
@@ -131,7 +135,7 @@ bool Foro::FileDatosActividades(){
             return true;
         }
         else{
-            std::cout<< "Ha habido un error abriendo el archivo..."<<std::endl;
+            std::cout<< "Ha ocurrido un error abriendo el archivo..."<<std::endl;
             return false;
         }
 }
@@ -140,17 +144,7 @@ bool Foro::LeerDatosActividades(){
     std::string nombreArchivo = "Lista_Actividades.txt";
     std::ifstream archivo(nombreArchivo);
     if (!archivo.is_open()) {
-        // std::ofstream archivo_escritura(nombreArchivo);
-        // // Verificar si la apertura para lectura fue exitosa después de intentar crear el archivo
-        // if (!archivo_escritura.is_open()) {
-        //     std::cerr << "Error al abrir o crear el archivo: " << nombreArchivo << std::endl;
-        //     archivo_escritura.close();
         return false;
-        // }
-        // else{
-        //     archivo_escritura.close();
-        //     return true;
-        // }
     }
     
     std::string linea;
@@ -201,8 +195,9 @@ void Foro::Control_actividad(Persona pers){
     Actividad nuevaActividad(newTitle, newCreator);
 
     do {
-        std::cout<<"\n________________________________________________________";
-        std::cout << "\nMenu Principal:\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "       Menu Principal\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         std::cout << "1. Agregar Actividad\n";
         std::cout << "2. Modificar Actividad\n";
         std::cout << "3. Eliminar Actividad\n";
@@ -212,8 +207,7 @@ void Foro::Control_actividad(Persona pers){
         std::cout << "0. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
-        std::cout<<"\n________________________________________________________\n";
-
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 
         switch (opcion) {
             case 1:
@@ -232,14 +226,14 @@ void Foro::Control_actividad(Persona pers){
                 
                 // Asegúrate de tener una función InputInfo() en tu clase Actividad
                 miForo.AddActividad(nuevaActividad);
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 2:
                 // Modificar Actividad
                 std::cout << "\nIngrese el título de la actividad a modificar: ";
                 std::cin >> id_title;
                 miForo.ModActividad(miForo.GetActividad(id_title));
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 3:
                 // Eliminar Actividad
@@ -247,7 +241,7 @@ void Foro::Control_actividad(Persona pers){
                 std::cin >> id_title;
                 miForo.DeleteActividad(id_title);
                 std::cout <<"Actividad eliminada correctamente\n";
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 4:
                 // Mostrar Títulos de Actividades utilizando la lista list_actividades_
@@ -258,7 +252,7 @@ void Foro::Control_actividad(Persona pers){
                 // Guardar Datos en Archivo
                 miForo.borrarArchivo("Lista_Actividades.txt");
                 miForo.FileDatosActividades();
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 6:
                 //Mostrar Info
@@ -269,13 +263,13 @@ void Foro::Control_actividad(Persona pers){
                     break;
                 }
                 miForo.GetActividad(search).GetInfo();
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 0:
                 std::cout << "\nSaliendo del programa...\n";
                 miForo.borrarArchivo("Lista_Actividades.txt"); 
                 miForo.FileDatosActividades();
-                std::cout<<"\n________________________________________________________\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             default:
                 std::cout << "\nOpción inválida. Intente de nuevo.\n";
@@ -294,24 +288,22 @@ bool Foro::ExisteActividad(std::string title){
 
 bool Foro::borrarArchivo(const std::string& nombreArchivo) {
     if (std::remove(nombreArchivo.c_str()) == 0) {
-        std::cout << "Archivo '" << nombreArchivo << "' borrado correctamente.\n";
         return true;
     } else {
-        std::cerr << "Error al intentar borrar el archivo '" << nombreArchivo << "'.\n";
         return false;
     }
 }
 
 void Foro::AddUserToActiv(Actividad ac)
 {
-    // Get the current number of users
+
     DeleteActividad(ac);
     int num_users = ac.GetNumUsers();
 
-    // Increment the number of users
+ 
     ac.SetNumUsers(num_users + 1);
     AddActividad(ac);
-    // Assuming these functions are responsible for handling file operations
+    
     borrarArchivo("Lista_Actividades.txt");
     FileDatosActividades();
 }

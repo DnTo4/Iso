@@ -20,9 +20,13 @@ bool Actividad::SetNumUsers(int num_usuarios)
 
 void Actividad::GetInfo()
 {
-    std::cout << "La información de esta Actividad: " << std::endl;
-    std::cout << "Título: " << GetTitulo() << std::endl;
-    std::cout << "Creador: " << GetCreador() << std::endl;
-    std::cout << "Descripción: " << GetDescripcion() << std::endl;
-    std::cout << "Número de Usuarios: " << GetNumUsers() << std::endl;
+    std::cout << "\n========================================\n";
+    std::cout << "   Información de esta Actividad\n";
+    std::cout << "========================================\n";
+    std::cout << "Título:       " << GetTitulo() << std::endl;
+    std::cout << "Creador:      " << GetCreador() << std::endl;
+    std::cout << "Descripción:  " << GetDescripcion() << std::endl;
+    std::cout << "Num. Usuarios:" << GetNumUsers() << std::endl;
+    std::cout << "========================================\n\n";
+
 }

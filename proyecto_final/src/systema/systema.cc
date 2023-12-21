@@ -40,13 +40,16 @@ bool Systema::EditUsuario(Persona usuario)
 
     DeleteUsuario(usuario);
     do {
-        std::cout << "\nMenu:\n";
-        std::cout << "1. Modificar Contrasenia\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "1. Modificar Contraseña\n";
         std::cout << "2. Modificar Facultad\n";
-        std::cout << "5. Mostrar Informacion\n";
+        std::cout << "3. Mostrar Información\n";
         std::cout << "0. Salir\n";
-        std::cout << "Seleccione una opcion: ";
+        std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
+
 
         switch (opcion) {
         case 1:
@@ -155,6 +158,7 @@ bool Systema::LeerDatosUsuarios()
     return true; 
 }
 
+//
 bool Systema::ExisteUsuario(std::string correo)
 {
     for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
@@ -196,8 +200,9 @@ void Systema::ProgramaSystemAdmin()
     int opcion, rol, fac;
     std::string new_email, new_pass, new_name;
     do {
-        std::cout<<"\n________________________________________________________";
-        std::cout << "\nMenú:\n";
+        std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+        std::cout << "           Menú\n";
+        std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         std::cout << "1. Agregar Usuario\n";
         std::cout << "2. Eliminar Usuario\n";
         std::cout << "3. Editar Usuario\n";
@@ -205,6 +210,7 @@ void Systema::ProgramaSystemAdmin()
         std::cout << "0. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
+
 
         switch (opcion) {
             case 1: {
@@ -214,7 +220,7 @@ void Systema::ProgramaSystemAdmin()
                 if(sistema.ExisteUsuario(new_email))
                 {
                     std::cout<<"Ese usuario ya existe"<<std::endl;
-                    std::cout<<"\n________________________________________________________";
+                    std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                     break;
                 }
                 nueva_person.CambiaEmail(new_email);
@@ -268,7 +274,7 @@ void Systema::ProgramaSystemAdmin()
                         fac=0;
 
                 }while (fac != 0);
-                std::cout<<"\n________________________________________________________";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 sistema.DeleteUsuario(new_email);
                 sistema.AddUsuario(nueva_person);
                 break;
@@ -323,10 +329,8 @@ void Systema::ProgramaSystemAdmin()
 
 bool Systema::borrarArchivo(const std::string& nombreArchivo) {
     if (std::remove(nombreArchivo.c_str()) == 0) {
-        std::cout << "Archivo '" << nombreArchivo << "' borrado correctamente.\n";
         return true;
     } else {
-        std::cerr << "Error al intentar borrar el archivo '" << nombreArchivo << "'.\n";
         return false;
     }
 }
