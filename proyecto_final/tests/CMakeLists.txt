@@ -32,7 +32,7 @@ add_test(tv_gtests actividades-test)
 # Testing foro library
 add_executable(foro-test foro-test.cc)
 target_link_libraries(foro-test
- PRIVATE GTest::GTest foro actividad)
+ PRIVATE GTest::GTest foro actividades)
 add_test(computer_gtests foro-test)
 
 # Testing usuario library
