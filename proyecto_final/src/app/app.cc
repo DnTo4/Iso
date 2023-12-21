@@ -53,9 +53,9 @@ do{
         if(sys.ComprobarContrasena(nom_usuario,inputContrasenia)==true){break;}
         else{
             attempts--;
-            std::cout<<"Te quedan "<< attempts << " intententos." <<std::endl;
+            std::cout<<"Te quedan "<< attempts << " intentos." <<std::endl;
             if(attempts==0){
-                std::cout<<"Intentos escedidos"<<std::endl;
+                std::cout<<"Intentos excedidos"<<std::endl;
                 exit(EXIT_FAILURE);
             }
         }
