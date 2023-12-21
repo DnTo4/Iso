@@ -45,7 +45,8 @@ bool Systema::EditUsuario(Persona usuario)
         std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         std::cout << "1. Modificar Contraseña\n";
         std::cout << "2. Modificar Facultad\n";
-        std::cout << "3. Mostrar Información\n";
+        std::cout << "3. Modificar Nombre\n";
+        std::cout << "4. Mostrar Información\n";
         std::cout << "0. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
@@ -64,10 +65,10 @@ bool Systema::EditUsuario(Persona usuario)
             std::getline(std::cin, new_facultad);
             usuario.CambiaFacultad(new_facultad);
             break;
-        case 3:
+        case 4:
             usuario.MostrarPersona();
             break;
-        case 4:
+        case 3:
             std::cout << "Ingrese el nuevo nombre: ";
             std::cin.ignore();
             std::getline(std::cin, new_name);
@@ -251,6 +252,7 @@ void Systema::ProgramaSystemAdmin()
                 };
                 std::cout << "Ingrese el nombre del nuevo usuario:\n";
                 std::cin>>new_name;
+                nueva_person.CambiaNombre(new_name);
                 std::cout << "Ingrese la facultad del nuevo usuario:\n";
                 std::cout << "1.ESPC\n";
                 std::cout << "2.MEDICINA\n";

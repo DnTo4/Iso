@@ -55,11 +55,20 @@ void Usuario::UserMenu(Usuario user)
                 std::cout << "Ingrese el titulo de la actividad:\n";
                 std::cin >> search;
                 aux = foroCopy.GetActividad(search);
-                foroCopy.AddUserToActiv(aux);
+                if(user.Inscribe(aux))
+                {
+                    foroCopy.AddUserToActiv(aux);
+                    //Usuario apuntarse ac
+                    user.Preinscribe(aux);
+                    std::cout << "Ya estas inscrito en la actividad" << std::endl;
+                    break;
+                }
+                else
+                {
+                    std::cout << "Ya estas inscrito en la actividad" << std::endl;
+                    break;
+                }
 
-                //Usuario apuntarse ac
-                user.Preinscribe(aux);
-                break;
             case 3:
                 std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 std::cout << "           Menú\n";

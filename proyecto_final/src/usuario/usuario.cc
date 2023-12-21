@@ -19,23 +19,11 @@ bool Usuario::Preinscribe(Actividad act)
 
 bool Usuario::Inscribe(Actividad act)
 {
-    for(auto it = listaInscrito_.begin(); it != listaInscrito_.end(); it++)
-    {
-        if(it->GetTitulo() == act.GetTitulo())
-        {
-            std::cout << "El usuario ya se encuentra inscrito a esta actividad\n";
-            return false;
-        }
-        else{listaPreinscrito_.push_back(act);}
-    }
-
     for(auto it = listaPreinscrito_.begin(); it != listaPreinscrito_.end(); it++)
     {
-        if(it->GetTitulo() == act.GetTitulo()){listaPreinscrito_.erase(it);}
+        if (act.GetTitulo() == it->GetTitulo()) {return true;}
     }
-
-    listaInscrito_.push_back(act);
-    return true;
+    return false;
 }
 
 void Usuario::VerPreInscripcion()

@@ -309,8 +309,6 @@ void Foro::AddUserToActiv(Actividad ac)
 
     DeleteActividad(ac);
     int num_users = ac.GetNumUsers();
-
- 
     ac.SetNumUsers(num_users + 1);
     AddActividad(ac);
     
