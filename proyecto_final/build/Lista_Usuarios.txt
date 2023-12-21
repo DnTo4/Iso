@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 i22moria|2004|Usuario|empty|empty|empty|
+=======
+a|a|Usuario|empty|empty|empty|
+>>>>>>> d920066bd1e3d96c6c00a5665e5c0ecd57918165
