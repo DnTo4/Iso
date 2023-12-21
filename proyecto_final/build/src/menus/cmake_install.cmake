@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/menus
+# Install script for directory: /home/rafa/Escritorio/Iso/proyecto_final/src/menus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
