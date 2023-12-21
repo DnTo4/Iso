@@ -1,7 +1,7 @@
 src/foro/CMakeFiles/foro.dir/foro.cc.o: \
- /home/rafa/Escritorio/Iso/proyecto_final/src/foro/foro.cc \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro/foro.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Iso/proyecto_final/src/foro/foro.h \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro/foro.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -133,7 +133,7 @@ src/foro/CMakeFiles/foro.dir/foro.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/rafa/Escritorio/Iso/proyecto_final/src/actividades/actividades.h \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.h \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -156,7 +156,7 @@ src/foro/CMakeFiles/foro.dir/foro.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/rafa/Escritorio/Iso/proyecto_final/src/persona/persona.h \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona/persona.h \
  /usr/include/c++/11/sstream /usr/include/c++/11/bits/sstream.tcc \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \

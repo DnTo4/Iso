@@ -1,7 +1,7 @@
 src/actividades/CMakeFiles/actividades.dir/actividades.cc.o: \
- /home/rafa/Escritorio/Iso/proyecto_final/src/actividades/actividades.cc \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.cc \
  /usr/include/stdc-predef.h \
- /home/rafa/Escritorio/Iso/proyecto_final/src/actividades/actividades.h \
+ /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

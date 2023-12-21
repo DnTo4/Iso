@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/src/systema/systema.cc" "src/systema/CMakeFiles/systema.dir/systema.cc.o" "gcc" "src/systema/CMakeFiles/systema.dir/systema.cc.o.d"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema/systema.cc" "src/systema/CMakeFiles/systema.dir/systema.cc.o" "gcc" "src/systema/CMakeFiles/systema.dir/systema.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

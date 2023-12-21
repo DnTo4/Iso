@@ -197,7 +197,7 @@ void Systema::ProgramaSystemAdmin()
     std::string new_email, new_pass, new_name;
     do {
         std::cout<<"\n________________________________________________________";
-        std::cout << "Menú:\n";
+        std::cout << "\nMenú:\n";
         std::cout << "1. Agregar Usuario\n";
         std::cout << "2. Eliminar Usuario\n";
         std::cout << "3. Editar Usuario\n";

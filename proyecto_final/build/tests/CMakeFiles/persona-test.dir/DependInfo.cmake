@@ -8,16 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/tests/persona-test.cc" "tests/CMakeFiles/persona-test.dir/persona-test.cc.o" "gcc" "tests/CMakeFiles/persona-test.dir/persona-test.cc.o.d"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/tests/persona-test.cc" "tests/CMakeFiles/persona-test.dir/persona-test.cc.o" "gcc" "tests/CMakeFiles/persona-test.dir/persona-test.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "/home/rafa/Escritorio/Iso/proyecto_final/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona/CMakeFiles/persona.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

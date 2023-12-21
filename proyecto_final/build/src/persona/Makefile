@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Iso/proyecto_final
+CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rafa/Escritorio/Iso/proyecto_final/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Iso/proyecto_final/build/CMakeFiles /home/rafa/Escritorio/Iso/proyecto_final/build/src/persona//CMakeFiles/progress.marks
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Iso/proyecto_final/build/CMakeFiles 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/src/persona//CMakeFiles/progress.marks
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/clean
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/persona/CMakeFiles/persona.dir/rule:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/CMakeFiles/persona.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/persona/CMakeFiles/persona.dir/rule
 .PHONY : src/persona/CMakeFiles/persona.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ persona: src/persona/CMakeFiles/persona.dir/rule
 
 # fast build rule for target.
 persona/fast:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/build
 .PHONY : persona/fast
 
 persona.o: persona.cc.o
@@ -190,7 +190,7 @@ persona.o: persona.cc.o
 
 # target to build an object file
 persona.cc.o:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.o
 .PHONY : persona.cc.o
 
 persona.i: persona.cc.i
@@ -198,7 +198,7 @@ persona.i: persona.cc.i
 
 # target to preprocess a source file
 persona.cc.i:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.i
 .PHONY : persona.cc.i
 
 persona.s: persona.cc.s
@@ -206,7 +206,7 @@ persona.s: persona.cc.s
 
 # target to generate assembly for a file
 persona.cc.s:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f src/persona/CMakeFiles/persona.dir/build.make src/persona/CMakeFiles/persona.dir/persona.cc.s
 .PHONY : persona.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rafa/Escritorio/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
