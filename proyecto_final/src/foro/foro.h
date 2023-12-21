@@ -23,8 +23,9 @@ class Foro{
         bool AddActividad(Actividad activ);
         bool ModActividad(Actividad activ);
         Actividad GetActividad(std::string titulo);
-        void GetTitulos();
-        bool FileDatosActividades();
+
+        void GetTitulos(); //
+        bool FileDatosActividades(); //
         bool LeerDatosActividades();
         void Control_actividad(Persona pers);
         bool ExisteActividad(std::string title);

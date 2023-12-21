@@ -27,6 +27,7 @@ class Systema//--->And
         Persona GetUser(std::string correo);
         void ProgramaSystemAdmin();
         bool borrarArchivo(const std::string& nombreArchivo);
+        
         void GetUsuariosSis();
 };
 

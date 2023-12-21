@@ -115,7 +115,7 @@ Actividad Foro::GetActividad(std::string titulo) {
 void Foro::GetTitulos() {
 
     if (list_actividades_.empty()) {
-        std::cout << "No hay actividades";
+        std::cout << "\nNo hay actividades\n";
     } else {
         for (auto it = list_actividades_.begin(); it != list_actividades_.end(); it++) {
            std::cout <<" -"<<it->GetTitulo() << "|" << it->GetCreador() 
@@ -189,10 +189,9 @@ void Foro::Control_actividad(Persona pers){
     std::string newCreator;
     std::string newDescription;
     std::string search;
-    
-    LeerDatosActividades();
 
     Actividad nuevaActividad(newTitle, newCreator);
+    miForo.LeerDatosActividades();
 
     do {
         std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
@@ -232,6 +231,10 @@ void Foro::Control_actividad(Persona pers){
                 // Modificar Actividad
                 std::cout << "\nIngrese el título de la actividad a modificar: ";
                 std::cin >> id_title;
+                if(miForo.ExisteActividad(id_title)==false){
+                    std::cout<<"Esa Actividad no existe"<<std::endl;   
+                    break;
+                }
                 miForo.ModActividad(miForo.GetActividad(id_title));
                 std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
@@ -239,14 +242,21 @@ void Foro::Control_actividad(Persona pers){
                 // Eliminar Actividad
                 std::cout << "\nIngrese el título de la actividad a eliminar: ";
                 std::cin >> id_title;
+                if(miForo.ExisteActividad(id_title)==false){
+                    std::cout<<"Esa Actividad no existe"<<std::endl;
+                    break;
+                }
                 miForo.DeleteActividad(id_title);
                 std::cout <<"Actividad eliminada correctamente\n";
                 std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 break;
             case 4:
                 // Mostrar Títulos de Actividades utilizando la lista list_actividades_
-                std::cout << "\nTítulos de Actividades:\n";
+                std::cout << "\n==========================================\n";
+                std::cout << "        Actividades en BOBI\n";
+                std::cout << "==========================================\n";
                 miForo.GetTitulos();
+                std::cout << "==========================================\n\n";
                 break;
             case 5:
                 // Guardar Datos en Archivo

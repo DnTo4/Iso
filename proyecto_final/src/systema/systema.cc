@@ -90,9 +90,12 @@ bool Systema::EditUsuario(Persona usuario)
 
 bool Systema::FileDatosUsuarios()
 {
+    // borrarArchivo("Lista_Usuarios.txt");
     std::ofstream fichero("Lista_Usuarios.txt");
+        
         if(fichero.is_open()){
             for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
+
                 fichero << it->ObtenerEmail() << "|" << it->ObtenerContrasenia() <<"|" 
                 << it->ObtenerRol() <<"|" << it->ObtenerDni()<<"|"<< it->ObtenerNombre() <<"|"
                 << it->ObtenerFacultad() <<"|" << '\n';
@@ -112,18 +115,9 @@ bool Systema::LeerDatosUsuarios()
     std::string nombreArchivo = "Lista_Usuarios.txt";
     std::ifstream archivo(nombreArchivo);
     if (!archivo.is_open()) {
-        std::ofstream archivo_escritura(nombreArchivo);
-        // Verificar si la apertura para lectura fue exitosa después de intentar crear el archivo
-        if (!archivo_escritura.is_open()) {
-            std::cerr << "Error al abrir o crear el archivo: " << nombreArchivo << std::endl;
-            archivo_escritura.close();
-            return false;
-        }
-        else{
-            archivo_escritura.close();
-            return true;
-        }
+        return false;
     }
+    
     
     std::string linea;
     while (std::getline(archivo, linea)) {
@@ -154,7 +148,6 @@ bool Systema::LeerDatosUsuarios()
     }
     archivo.close();
     
-    std::cout << "Sincronizando datos..." << std::endl;
     return true; 
 }
 
@@ -201,6 +194,7 @@ void Systema::ProgramaSystemAdmin()
     Persona nueva_person("empty","empty","empty");
     int opcion, rol, fac;
     std::string new_email, new_pass, new_name;
+    sistema.LeerDatosUsuarios();//
     do {
         std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
         std::cout << "           Menú\n";
@@ -227,9 +221,11 @@ void Systema::ProgramaSystemAdmin()
                     break;
                 }
                 nueva_person.CambiaEmail(new_email);
+
                 std::cout << "Ingrese la contraseña del nuevo usuario:\n";
                 std::cin>>new_pass;
                 nueva_person.CambiaContrasenia(new_pass);
+
                 std::cout << "Ingrese el Rol del nuevo usuario:\n";
                 std::cout << "1.Usuario\n";
                 std::cout << "2.Director Actividades\n";
@@ -241,18 +237,18 @@ void Systema::ProgramaSystemAdmin()
                 {
                     case 1:
                         nueva_person.CambiaRol("Usuario");
-                        rol=0;
+                        break;
                     case 2:
                         nueva_person.CambiaRol("Director");
-                        rol=0;
+                        break;
                     case 3:
                         nueva_person.CambiaRol("Administrador");
-                        rol=0;
+                        break;
                     default:
                         nueva_person.CambiaRol("Usuario");
-                        rol=0;
+                        break;
 
-                }while (rol != 0);
+                };
                 std::cout << "Ingrese el nombre del nuevo usuario:\n";
                 std::cin>>new_name;
                 std::cout << "Ingrese la facultad del nuevo usuario:\n";
@@ -265,21 +261,24 @@ void Systema::ProgramaSystemAdmin()
                 {
                     case 1:
                         nueva_person.CambiaFacultad("EPSC");
-                        fac=0;
+                        break;
                     case 2:
                         nueva_person.CambiaFacultad("MEDICINA");
-                        fac=0;
+                        break;
                     case 3:
                         nueva_person.CambiaFacultad("DERECHO");
-                        fac=0;
+                        break;
                     default:
                         nueva_person.CambiaFacultad("UCO");
-                        fac=0;
+                        break;
 
-                }while (fac != 0);
-                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
-                sistema.DeleteUsuario(new_email);
+                };
+                
+                //sistema.DeleteUsuario(new_email);
                 sistema.AddUsuario(nueva_person);
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                // sistema.borrarArchivo("Lista_Usuarios.txt");
+                // sistema.FileDatosUsuarios();
                 break;
             }
             case 2: {
@@ -291,6 +290,10 @@ void Systema::ProgramaSystemAdmin()
                     break;
                 }
                 sistema.DeleteUsuario(new_email);
+                std::cout <<"Usuario eliminad@ correctamente\n";
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                // sistema.borrarArchivo("Lista_Usuarios.txt");
+                // sistema.FileDatosUsuarios();
                 break;
             }
             case 3: {
@@ -303,6 +306,9 @@ void Systema::ProgramaSystemAdmin()
                     break;
                 }
                 sistema.EditUsuario(sistema.GetUser(new_email));
+                std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                // sistema.borrarArchivo("Lista_Usuarios.txt");
+                // sistema.FileDatosUsuarios();
                 break;
             }
             case 4: {
@@ -329,7 +335,8 @@ void Systema::ProgramaSystemAdmin()
             }
             case 0: {
                 std::cout << "Saliendo del programa...\n";
-                FileDatosUsuarios();
+                sistema.borrarArchivo("Lista_Usuarios.txt");
+                sistema.FileDatosUsuarios();
                 break;
             }
             default: {
@@ -341,17 +348,19 @@ void Systema::ProgramaSystemAdmin()
 }
 
 bool Systema::borrarArchivo(const std::string& nombreArchivo) {
-    if (std::remove(nombreArchivo.c_str()) == 0) {
-        return true;
-    } else {
-        return false;
-    }
+    std::ofstream ofs;
+    ofs.open("Lista_Usuarios.txt", std::ofstream::out | std::ofstream::trunc);
+    ofs.close();
+    return true;
+
 }
 
 void Systema::GetUsuariosSis()
 {
-    list_usuarios_.clear();
-    LeerDatosUsuarios();
+    // borrarArchivo("Lista_Usuarios.txt");
+    // FileDatosUsuarios();
+    // list_usuarios_.clear();
+    // LeerDatosUsuarios();
     if (list_usuarios_.empty()) {
         std::cout << "No hay usuarios\n";
     } 
