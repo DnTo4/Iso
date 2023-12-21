@@ -1,5 +1,5 @@
 src/app/CMakeFiles/app-main.dir/app.cc.o: \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/app/app.cc \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/app/app.cc \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,14 +146,14 @@ src/app/CMakeFiles/app-main.dir/app.cc.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema/systema.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/systema/systema.h \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/list.tcc \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona/persona.h \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades/actividades.h \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/admin/admin.h \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/director/director.h \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro/foro.h \
- /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario/usuario.h
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/persona/persona.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/actividades/actividades.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/admin/admin.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/director/director.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/foro/foro.h \
+ /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/usuario/usuario.h

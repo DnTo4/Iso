@@ -63,7 +63,7 @@ int main()
 
             if(sys.ExisteUsuario(nom_usuario)==false)
             {
-                std::cout<<"No se a encontrado Usuario"<<std::endl;
+                std::cout<<"No se ha encontrado Usuario"<<std::endl;
                 std::cout<<"Desea registrarse (y/n):"<<std::endl;
                 std::cin>>respuesta;
                 if(respuesta=="y"){

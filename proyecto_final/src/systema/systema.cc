@@ -161,6 +161,8 @@ bool Systema::LeerDatosUsuarios()
 //
 bool Systema::ExisteUsuario(std::string correo)
 {
+    list_usuarios_.clear();
+    LeerDatosUsuarios();
     for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
         if (correo == it->ObtenerEmail()) {return true;}
     }
@@ -207,6 +209,7 @@ void Systema::ProgramaSystemAdmin()
         std::cout << "2. Eliminar Usuario\n";
         std::cout << "3. Editar Usuario\n";
         std::cout << "4. Verificar Existencia de Usuario\n";
+        std::cout << "5. Mostrar Usuarios del sistema\n";
         std::cout << "0. Salir\n";
         std::cout << "Seleccione una opción: ";
         std::cin >> opcion;
@@ -311,8 +314,18 @@ void Systema::ProgramaSystemAdmin()
                     std::cout<<"Ese usuario "<< new_email<<" no existe"<<std::endl;
                     break;
                 }
-                std::cout<<"El usuario" << new_email <<" existe"<<std::endl;
+                std::cout<<"El usuario " << new_email <<" existe"<<std::endl;
                 break;
+            }
+            case 5:{
+                std::cout << "\n==========================================\n";
+                std::cout << "        Usuarios en BOBI\n";
+                std::cout << "==========================================\n";
+
+                sistema.GetUsuariosSis();
+
+                std::cout << "==========================================\n\n";
+
             }
             case 0: {
                 std::cout << "Saliendo del programa...\n";
@@ -332,5 +345,21 @@ bool Systema::borrarArchivo(const std::string& nombreArchivo) {
         return true;
     } else {
         return false;
+    }
+}
+
+void Systema::GetUsuariosSis()
+{
+    list_usuarios_.clear();
+    LeerDatosUsuarios();
+    if (list_usuarios_.empty()) {
+        std::cout << "No hay usuarios\n";
+    } 
+    else {
+        for (auto it = list_usuarios_.begin(); it != list_usuarios_.end(); it++) {
+           std::cout <<" -" << it->ObtenerEmail() << "|" << it->ObtenerContrasenia() <<"|" 
+                << it->ObtenerRol() <<"|" << it->ObtenerDni()<<"|"<< it->ObtenerNombre() <<"|"
+                << it->ObtenerFacultad() <<"|" << '\n';
+        }
     }
 }
