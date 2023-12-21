@@ -292,7 +292,7 @@ void Systema::ProgramaSystemAdmin()
                     break;
                 }
                 sistema.DeleteUsuario(new_email);
-                std::cout <<"Usuario eliminad@ correctamente\n";
+                std::cout <<"Ese usuario ya no existe\n";
                 std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
                 // sistema.borrarArchivo("Lista_Usuarios.txt");
                 // sistema.FileDatosUsuarios();

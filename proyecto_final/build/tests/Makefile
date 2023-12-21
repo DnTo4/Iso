@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/copia/proyecto_final
+CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build
+CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/tests//CMakeFiles/progress.marks
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/CMakeFiles 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/tests//CMakeFiles/progress.marks
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/persona-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/persona-test.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/persona-test.dir/rule
 .PHONY : tests/CMakeFiles/persona-test.dir/rule
 
 # Convenience name for target.
@@ -182,12 +182,12 @@ persona-test: tests/CMakeFiles/persona-test.dir/rule
 
 # fast build rule for target.
 persona-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/build
 .PHONY : persona-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/systema-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/systema-test.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/systema-test.dir/rule
 .PHONY : tests/CMakeFiles/systema-test.dir/rule
 
 # Convenience name for target.
@@ -196,12 +196,12 @@ systema-test: tests/CMakeFiles/systema-test.dir/rule
 
 # fast build rule for target.
 systema-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/build
 .PHONY : systema-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/actividades-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividades-test.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/actividades-test.dir/rule
 .PHONY : tests/CMakeFiles/actividades-test.dir/rule
 
 # Convenience name for target.
@@ -210,12 +210,12 @@ actividades-test: tests/CMakeFiles/actividades-test.dir/rule
 
 # fast build rule for target.
 actividades-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/build
 .PHONY : actividades-test/fast
 
 # Convenience name for target.
 tests/CMakeFiles/foro-test.dir/rule:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/foro-test.dir/rule
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/foro-test.dir/rule
 .PHONY : tests/CMakeFiles/foro-test.dir/rule
 
 # Convenience name for target.
@@ -224,7 +224,7 @@ foro-test: tests/CMakeFiles/foro-test.dir/rule
 
 # fast build rule for target.
 foro-test/fast:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/build
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/build
 .PHONY : foro-test/fast
 
 actividades-test.o: actividades-test.cc.o
@@ -232,7 +232,7 @@ actividades-test.o: actividades-test.cc.o
 
 # target to build an object file
 actividades-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.o
 .PHONY : actividades-test.cc.o
 
 actividades-test.i: actividades-test.cc.i
@@ -240,7 +240,7 @@ actividades-test.i: actividades-test.cc.i
 
 # target to preprocess a source file
 actividades-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.i
 .PHONY : actividades-test.cc.i
 
 actividades-test.s: actividades-test.cc.s
@@ -248,7 +248,7 @@ actividades-test.s: actividades-test.cc.s
 
 # target to generate assembly for a file
 actividades-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/actividades-test.dir/build.make tests/CMakeFiles/actividades-test.dir/actividades-test.cc.s
 .PHONY : actividades-test.cc.s
 
 foro-test.o: foro-test.cc.o
@@ -256,7 +256,7 @@ foro-test.o: foro-test.cc.o
 
 # target to build an object file
 foro-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.o
 .PHONY : foro-test.cc.o
 
 foro-test.i: foro-test.cc.i
@@ -264,7 +264,7 @@ foro-test.i: foro-test.cc.i
 
 # target to preprocess a source file
 foro-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.i
 .PHONY : foro-test.cc.i
 
 foro-test.s: foro-test.cc.s
@@ -272,7 +272,7 @@ foro-test.s: foro-test.cc.s
 
 # target to generate assembly for a file
 foro-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/foro-test.dir/build.make tests/CMakeFiles/foro-test.dir/foro-test.cc.s
 .PHONY : foro-test.cc.s
 
 persona-test.o: persona-test.cc.o
@@ -280,7 +280,7 @@ persona-test.o: persona-test.cc.o
 
 # target to build an object file
 persona-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.o
 .PHONY : persona-test.cc.o
 
 persona-test.i: persona-test.cc.i
@@ -288,7 +288,7 @@ persona-test.i: persona-test.cc.i
 
 # target to preprocess a source file
 persona-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.i
 .PHONY : persona-test.cc.i
 
 persona-test.s: persona-test.cc.s
@@ -296,7 +296,7 @@ persona-test.s: persona-test.cc.s
 
 # target to generate assembly for a file
 persona-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/persona-test.dir/build.make tests/CMakeFiles/persona-test.dir/persona-test.cc.s
 .PHONY : persona-test.cc.s
 
 systema-test.o: systema-test.cc.o
@@ -304,7 +304,7 @@ systema-test.o: systema-test.cc.o
 
 # target to build an object file
 systema-test.cc.o:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.o
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.o
 .PHONY : systema-test.cc.o
 
 systema-test.i: systema-test.cc.i
@@ -312,7 +312,7 @@ systema-test.i: systema-test.cc.i
 
 # target to preprocess a source file
 systema-test.cc.i:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.i
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.i
 .PHONY : systema-test.cc.i
 
 systema-test.s: systema-test.cc.s
@@ -320,7 +320,7 @@ systema-test.s: systema-test.cc.s
 
 # target to generate assembly for a file
 systema-test.cc.s:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.s
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/systema-test.dir/build.make tests/CMakeFiles/systema-test.dir/systema-test.cc.s
 .PHONY : systema-test.cc.s
 
 # Help Target
@@ -363,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

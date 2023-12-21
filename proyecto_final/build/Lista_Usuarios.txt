@@ -1,7 +1,0 @@
-i22moria|2004|Administrador|empty|empty|empty|
-i22tobur|2004|Administrador|empty|empty|empty|
-i22tagrd|2004|Administrador|empty|empty|empty|
-i22doria|2005|Director|empty|empty|empty|
-i22cafe|2004|Usuario|empty|David Penia|empty|
-i22poria|2004|Usuario|empty|Joselu|empty|
-testmail|2004|Usuario|empty|empty|EPSC|

@@ -1,4 +1,0 @@
-ac1|i22moria|desp1|0|
-ac2|i22moria|desp2|0|
-ac4|i22moria|desp4|0|
-ac3|i22moria|desp3|1|

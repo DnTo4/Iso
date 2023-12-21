@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/systema -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/persona -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/foro -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/actividades -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/usuario -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/admin -I/mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/director -isystem /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/_deps/googletest-src/googletest -isystem /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/_deps/googletest-src/googlemock/include -isystem /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/_deps/googletest-src/googlemock
+CXX_INCLUDES = -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/systema -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/persona -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/actividades -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/usuario -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/admin -I/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/director -isystem /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-src/googletest -isystem /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-src/googlemock/include -isystem /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-src/googlemock
 
 CXX_FLAGS = -std=gnu++17
 

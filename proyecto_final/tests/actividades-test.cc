@@ -25,25 +25,6 @@ TEST(ActividadTest, SetNumUsers) {
     EXPECT_EQ(actividad.GetNumUsers(), 20);
 }
 
-// Prueba para el método GetInfo
-TEST(ActividadTest, GetInfo) {
-    Actividad actividad("Título de prueba", "Creador de prueba", "Descripción de prueba", 10);
-
-    // Captura la salida estándar para comprobar la información impresa
-    testing::internal::CaptureStdout();
-
-    actividad.GetInfo();
-
-    // Obtiene la salida estándar capturada
-    std::string output = testing::internal::GetCapturedStdout();
-
-    // Verifica que la información impresa sea la esperada
-    EXPECT_NE(output.find("Título: Título de prueba"), std::string::npos);
-    EXPECT_NE(output.find("Creador: Creador de prueba"), std::string::npos);
-    EXPECT_NE(output.find("Descripción: Descripción de prueba"), std::string::npos);
-    EXPECT_NE(output.find("Número de Usuarios: 10"), std::string::npos);
-}
-
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

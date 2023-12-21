@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Andres/Desktop/copia/proyecto_final/tests
+# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/_deps/googletest-build/cmake_install.cmake")
+  include("/mnt/c/Users/Andres/Desktop/Iso/proyecto_final/build/_deps/googletest-build/cmake_install.cmake")
 
 endif()
 

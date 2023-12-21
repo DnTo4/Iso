@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/foro
+# Install script for directory: /mnt/c/Users/Andres/Desktop/Iso/proyecto_final/src/foro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
