@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/app-main.dir/app.cc.o -o app-main  libapp.a ../menus/libmenus.a ../systema/libsystema.a ../admin/libadmin.a ../director/libdirector.a ../usuario/libusuario.a ../foro/libforo.a ../actividades/libactividades.a ../persona/libpersona.a 

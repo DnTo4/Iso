@@ -1,0 +1,5 @@
+add_library(usuario usuario.cc usuario.h)
+target_link_libraries(usuario PUBLIC persona)
+target_link_libraries(usuario PUBLIC actividades)
+target_link_libraries(usuario PUBLIC foro)
+target_include_directories(usuario PUBLIC ${CMAKE_CURRENT_LIST_DIR})
