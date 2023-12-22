@@ -30,7 +30,7 @@ class Foro{
         void Control_actividad(Persona pers);
         bool ExisteActividad(std::string title);
         bool borrarArchivo(const std::string& nombreArchivo);
-        void AddUserToActiv(Actividad ac);
+        void AddUserToActiv(Actividad ac, int i);
 };
 
 #endif

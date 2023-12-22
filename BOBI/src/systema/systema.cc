@@ -351,7 +351,7 @@ void Systema::ProgramaSystemAdmin()
 
 bool Systema::borrarArchivo(const std::string& nombreArchivo) {
     std::ofstream ofs;
-    ofs.open("Lista_Usuarios.txt", std::ofstream::out | std::ofstream::trunc);
+    ofs.open(nombreArchivo, std::ofstream::out | std::ofstream::trunc);
     ofs.close();
     return true;
 

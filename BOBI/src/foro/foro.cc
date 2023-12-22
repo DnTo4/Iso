@@ -304,14 +304,24 @@ bool Foro::borrarArchivo(const std::string& nombreArchivo) {
     }
 }
 
-void Foro::AddUserToActiv(Actividad ac)
+void Foro::AddUserToActiv(Actividad ac, int i)
 {
-
-    DeleteActividad(ac);
-    int num_users = ac.GetNumUsers();
-    ac.SetNumUsers(num_users + 1);
-    AddActividad(ac);
-    
-    borrarArchivo("Lista_Actividades.txt");
-    FileDatosActividades();
+    if(i==1){
+        DeleteActividad(ac);
+        int num_users = ac.GetNumUsers();
+        ac.SetNumUsers(num_users + 1);
+        AddActividad(ac);
+        
+        borrarArchivo("Lista_Actividades.txt");
+        FileDatosActividades();
+    }
+    if(i==0){
+        DeleteActividad(ac);
+        int num_users = ac.GetNumUsers();
+        ac.SetNumUsers(num_users - 1);
+        AddActividad(ac);
+        
+        borrarArchivo("Lista_Actividades.txt");
+        FileDatosActividades();
+    }
 }

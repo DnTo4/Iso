@@ -39,7 +39,7 @@ TEST(ForoTest, AddUserToActiv) {
     Actividad actividad("Título de prueba", "Creador de prueba", "Descripción de prueba", 10);
 
     foro.AddActividad(actividad);
-    foro.AddUserToActiv(actividad);
+    foro.AddUserToActiv(actividad, 1);
 
     Actividad actividadModificada = foro.GetActividad("Título de prueba");
     EXPECT_EQ(actividadModificada.GetNumUsers(), 11);

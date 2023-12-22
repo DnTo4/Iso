@@ -10,7 +10,7 @@ bool Usuario::Preinscribe(Actividad act)
     {
         if(it->GetTitulo() == act.GetTitulo())
         {
-            std::cout << "El usuario ya se encuentraba inscrito en esta actividad\n";
+            std::cout << "El usuario ya se encontraba inscrito en esta actividad\n";
             return false ;
         }
     }
@@ -103,19 +103,14 @@ bool Usuario::LeerDataUser(std::string name_file)
 
 bool Usuario::Desapuntarse(std::string actividad)
 {
-    Foro miForo;
-    Actividad aux(miForo.GetActividad(actividad));
     if (listaPreinscrito_.empty()) {return false;}
-
-    for(auto it=listaPreinscrito_.begin(); it!=listaPreinscrito_.end();it++){
-     if(it->GetTitulo()==actividad){
-        miForo.borrarArchivo(ObtenerEmail()+".txt");
-        int a = aux.GetNumUsers()-1;
-        aux.SetNumUsers(a);
-        listaPreinscrito_.erase(it);
-        miForo.FileDatosActividades();
-        return true;
-     }
-    }
+        for(auto it=listaPreinscrito_.begin(); it!=listaPreinscrito_.end();it++){
+            if(it->GetTitulo()==actividad){
+                listaPreinscrito_.erase(it);
+                std::cout << "Suscripcion a la actividad: "<< actividad << " finalizada correctamente" << std::endl;        
+                return true;
+            }
+        }
+    std::cout << "No estabas inscrito en la actividad" << std::endl;
     return false;
 }

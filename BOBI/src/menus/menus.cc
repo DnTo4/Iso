@@ -33,6 +33,7 @@ void Usuario::UserMenu(Usuario user)
         std::cout << "2. Apuntarse a una actividad\n";
         std::cout << "3. Editar perfil\n";
         std::cout << "4. Actividades a las que estoy preinscrito\n";
+        std::cout << "5. Anular Inscripcion a una actividad\n";
         std::cout << "0. Salir\n";
         std::cout << "Ingrese su opción: ";
         std::cin >> on;
@@ -57,7 +58,7 @@ void Usuario::UserMenu(Usuario user)
                 aux = foroCopy.GetActividad(search);
                 if(user.Preinscribe(aux) == true)
                 {
-                    foroCopy.AddUserToActiv(aux);
+                    foroCopy.AddUserToActiv(aux,1);
                     break;
                 }
                 else
@@ -117,10 +118,25 @@ void Usuario::UserMenu(Usuario user)
                 user.VerPreInscripcion();
 
                 std::cout << "==========================================\n\n";
-
+                break;
+            case 5:
+                std::cout << "Ingrese el titulo de la actividad:\n";
+                std::cin >> search;
+                aux = foroCopy.GetActividad(search);
+                if (user.Desapuntarse(search)==true)
+                {
+                    foroCopy.AddUserToActiv(aux,0);
+                    break;
+                }
+                else
+                {
+                    std::cout << "No estabas inscrito en la actividad" << std::endl;
+                    break;
+                }
                 break;
             case 0:
                 std::cout << "Saliendo...\n";
+                infCopy.borrarArchivo(file_name);
                 user.FileDataUser(file_name);
                 break;  // Agregado para evitar el error
             default:
