@@ -8,3 +8,4 @@ El directorio src contiene todo el código fuente del sistema, dividido en fiche
 
 Finalmente, el directorio "tests" contiene las pruebas del sistema, realizadas mediante Google Test. Los ejecutables se encuentran dentro del directorio build/test.
 
+Se incluyen ficheros con algunos ejemplos de usuarios y actividades
