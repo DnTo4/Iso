@@ -1,0 +1,3 @@
+i22admin|admin|Administrador|00000000X|Antonio|EPSC|
+i22dir|dir|Director|11111111Y|Ana|MEDICINA|
+i22us|2004|Usuario|22222222Z|David|DERECHO|
