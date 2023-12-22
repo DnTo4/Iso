@@ -1,6 +1,3 @@
-i22moria|2004|Administrador|empty|empty|empty|
-i22tobur|2004|Administrador|empty|empty|empty|
-i22tagrd|2004|Administrador|empty|empty|empty|
-i22doria|2005|Director|empty|empty|empty|
-i22cafe|2004|Usuario|empty|David Penia|empty|
-i22poria|2004|Usuario|empty|Joselu|empty|
+i22admin|admin|Administrador|00000000X|Antonio|EPSC|
+i22dir|dir|Director|11111111Y|Ana|MEDICINA|
+i22us|2004|Usuario|22222222Z|David|DERECHO|

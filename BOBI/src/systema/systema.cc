@@ -333,6 +333,7 @@ void Systema::ProgramaSystemAdmin()
                 sistema.GetUsuariosSis();
 
                 std::cout << "==========================================\n\n";
+                break;
 
             }
             case 0: {
