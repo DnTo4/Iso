@@ -36,10 +36,10 @@ target_link_libraries(foro-test
 add_test(computer_gtests foro-test)
 
 # Testing usuario library
-#add_executable(usuario-test usuario-test.cc)
-#target_link_libraries(usuario-test
-# PRIVATE GTest::GTest usuario persona)
-#add_test(basket_gtests usuario-test)
+add_executable(usuario-test usuario-test.cc)
+target_link_libraries(usuario-test
+ PRIVATE GTest::GTest usuario persona)
+add_test(basket_gtests usuario-test)
 
 # Testing admin library
 #add_executable(admin-test admin-test.cc)

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/Andres/Desktop/copia/proyecto_final
+CMAKE_SOURCE_DIR = /home/rafa/Escritorio/Iso/BOBI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build
+CMAKE_BINARY_DIR = /home/rafa/Escritorio/Iso/BOBI/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/CMakeFiles /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Iso/BOBI/build/CMakeFiles /home/rafa/Escritorio/Iso/BOBI/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Andres/Desktop/copia/proyecto_final/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rafa/Escritorio/Iso/BOBI/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -367,6 +367,19 @@ foro-test/fast:
 .PHONY : foro-test/fast
 
 #=============================================================================
+# Target rules for targets named usuario-test
+
+# Build rule for target.
+usuario-test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 usuario-test
+.PHONY : usuario-test
+
+# fast build rule for target.
+usuario-test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/usuario-test.dir/build.make tests/CMakeFiles/usuario-test.dir/build
+.PHONY : usuario-test/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -450,6 +463,7 @@ help:
 	@echo "... systema"
 	@echo "... systema-test"
 	@echo "... usuario"
+	@echo "... usuario-test"
 .PHONY : help
 
 

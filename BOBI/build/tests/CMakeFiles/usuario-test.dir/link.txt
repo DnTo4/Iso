@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/usuario-test.dir/usuario-test.cc.o -o usuario-test  ../src/usuario/libusuario.a ../src/persona/libpersona.a ../lib/libgtest_main.a ../lib/libgmock_main.a ../lib/libgmock.a ../lib/libgtest.a ../src/foro/libforo.a ../src/persona/libpersona.a ../src/actividades/libactividades.a 

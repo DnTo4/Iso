@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Andres/Desktop/copia/proyecto_final/src/usuario
+# Install script for directory: /home/rafa/Escritorio/Iso/BOBI/src/usuario
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -192,6 +192,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/systema-test.dir/DependInfo.cmake"
   "tests/CMakeFiles/actividades-test.dir/DependInfo.cmake"
   "tests/CMakeFiles/foro-test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/usuario-test.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
